@@ -1,0 +1,44 @@
+using UnityEngine;
+
+public class CharacterController : MonoBehaviour
+{
+    [Header("Character Settings")]
+    [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] private Collider2D _collider;
+
+    [Header("Controls Settings")]
+    [SerializeField] private float _highSpeed = 1.5f;
+    [SerializeField] private float _speed = 1;
+    [SerializeField] private float _slowSpeed = 0.5f;
+    [SerializeField,Range(0,315)] private float _rotation;
+    [SerializeField] private bool _boutonFast = false;
+    [SerializeField] private bool _boutonSlow = false;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Force de propulsion du missile
+        float targetSpeed = 0;
+        if (_boutonFast)
+            targetSpeed = _highSpeed;
+        else if (_boutonSlow)
+            targetSpeed = _slowSpeed;
+        else
+            targetSpeed = _speed;
+
+        if (Application.isEditor)
+            _rb.AddForce(_rb.transform.up * targetSpeed);
+        else
+            _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
+
+
+        //rotation du missile
+        _rb.rotation = _rotation;
+    }
+}
