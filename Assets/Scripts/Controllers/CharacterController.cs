@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -10,7 +11,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _highSpeed = 1.5f;
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _slowSpeed = 0.5f;
-    [SerializeField,Range(0,315)] private float _rotation;
+    [SerializeField,Range(0,360)] private float _rotation = 0;
     [SerializeField] private bool _boutonFast = false;
     [SerializeField] private bool _boutonSlow = false;
 
@@ -37,7 +38,11 @@ public class CharacterController : MonoBehaviour
         else
             _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
 
-
+        if (InputManager.Instance.MoveDir != Vector2.zero)
+        {
+            _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
+            Debug.Log(_rotation);
+        }
         //rotation du missile
         _rb.rotation = _rotation;
     }
