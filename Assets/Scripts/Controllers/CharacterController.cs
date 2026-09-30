@@ -26,23 +26,36 @@ public class CharacterController : MonoBehaviour
     {
         // Force de propulsion du missile
         float targetSpeed = 0;
-        if (_boutonFast)
+        if (InputManager.Instance.Boost != 0 && InputManager.Instance.Brake == 0)
+        {
             targetSpeed = _highSpeed;
-        else if (_boutonSlow)
+            _boutonFast = true;
+        }
+        else if (InputManager.Instance.Brake != 0 && InputManager.Instance.Boost == 0)
+        {
             targetSpeed = _slowSpeed;
+            _boutonSlow = true;
+        }
         else
+        {
             targetSpeed = _speed;
+            _boutonFast = false;
+            _boutonSlow = false;
+        }
 
+        //Change le calcul si dans l'editeur ou non
         if (Application.isEditor)
             _rb.AddForce(_rb.transform.up * targetSpeed);
         else
             _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
 
+        //calcul de direction du missile
         if (InputManager.Instance.MoveDir != Vector2.zero)
         {
             _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
             Debug.Log(_rotation);
         }
+
         //rotation du missile
         _rb.rotation = _rotation;
     }
