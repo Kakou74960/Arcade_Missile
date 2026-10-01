@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlaygroundArea : MonoBehaviour
@@ -5,7 +6,10 @@ public class PlaygroundArea : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log(collision);
-        collision.gameObject.GetComponent<CharacterController>().Die();
+
+        CharacterController missile = collision.gameObject.GetComponent<CharacterController>();
+        if (!missile.IsDestroyed())
+            missile.Die();
     }
 
     private void OnApplicationQuit()

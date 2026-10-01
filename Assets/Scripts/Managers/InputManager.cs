@@ -12,6 +12,7 @@ public class InputManager : Singleton<InputManager>, IManager
     private InputActionMap _arcadeActions;
     private float _boost;
     private float _brake;
+    private InputAction _autodestruct;
     #endregion Fields
 
     #region Properties
@@ -19,6 +20,7 @@ public class InputManager : Singleton<InputManager>, IManager
     public Vector2 NormalizedMoveDir => _moveDir.normalized;
     public float Boost => _boost;
     public float Brake => _brake;
+    public InputAction Autodestruct => _autodestruct;
     #endregion Properties
 
     #region Event
@@ -58,6 +60,7 @@ public class InputManager : Singleton<InputManager>, IManager
         //Debug.Log("Vecteur moveDir " + _moveDir);
         _boost = _arcadeActions.FindAction("Accelerate").ReadValue<float>();
         _brake = _arcadeActions.FindAction("Decelerate").ReadValue<float>();
+        _autodestruct = _arcadeActions.FindAction("Explode");
         //MOVEDIR
         //_moveDir.x = Input.GetAxis("Horizontal");
         //_moveDir.y = Input.GetAxis("Vertical");

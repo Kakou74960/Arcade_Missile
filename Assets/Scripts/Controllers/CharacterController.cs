@@ -16,11 +16,14 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private bool _boutonFast = false;
     [SerializeField] private bool _boutonSlow = false;
 
+    private bool _die = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        InputManager.Instance.Autodestruct.performed += ctx => Die();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -69,7 +72,11 @@ public class CharacterController : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if(!_die)
+        {
+            Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            _die = true;
+        }
     }
 }
