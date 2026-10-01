@@ -10,6 +10,7 @@ public class SpawnPointMissile : MonoBehaviour
     {
         if (FindAnyObjectByType<CharacterController>())
             _currentMissile = FindAnyObjectByType<CharacterController>().gameObject;
+        CharacterManager.Instance.MissileUsed = 0;
     }
 
     // Update is called once per frame
@@ -18,6 +19,7 @@ public class SpawnPointMissile : MonoBehaviour
         if (_currentMissile == null)
         {
             _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position, Quaternion.identity);
+            CharacterManager.Instance.MissileUsed++;
         }
     }
 }

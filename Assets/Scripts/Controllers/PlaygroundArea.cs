@@ -8,7 +8,7 @@ public class PlaygroundArea : MonoBehaviour
         Debug.Log(collision);
 
         CharacterController missile = collision.gameObject.GetComponent<CharacterController>();
-        if (!missile.IsDestroyed())
+        if (missile)
             missile.Die();
     }
 
