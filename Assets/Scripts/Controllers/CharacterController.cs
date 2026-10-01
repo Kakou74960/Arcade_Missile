@@ -6,6 +6,7 @@ public class CharacterController : MonoBehaviour
     [Header("Character Settings")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Collider2D _collider;
+    [SerializeField] private GameObject _explosion;
 
     [Header("Controls Settings")]
     [SerializeField] private float _highSpeed = 1.5f;
@@ -42,6 +43,7 @@ public class CharacterController : MonoBehaviour
             _boutonFast = false;
             _boutonSlow = false;
         }
+        Debug.Log("Missile speed : " + targetSpeed);
 
         //Change le calcul si dans l'editeur ou non
         if (Application.isEditor)
@@ -58,5 +60,16 @@ public class CharacterController : MonoBehaviour
 
         //rotation du missile
         _rb.rotation = _rotation;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Die();
+    }
+
+    public void Die()
+    {
+        Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

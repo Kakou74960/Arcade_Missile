@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7810687417685920010}
   - component: {fileID: 612760112967995972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 6908898923242078525}
   - component: {fileID: 3219739344810318446}
   - component: {fileID: 6469178899270755395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,10 +2403,10 @@ GameObject:
   - component: {fileID: 2583451313177834398}
   - component: {fileID: 4968569879013208069}
   - component: {fileID: 718443193986603301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MissileJoueur
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2442,6 +2442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
   _rb: {fileID: 4968569879013208069}
   _collider: {fileID: 718443193986603301}
+  _explosion: {fileID: 2698583633901585660, guid: e0cb93673ad744c468bc7b3e60cdf820, type: 3}
   _highSpeed: 15
   _speed: 10
   _slowSpeed: 5
@@ -2582,7 +2583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580765343713472821}
   - component: {fileID: 1697855949916833137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

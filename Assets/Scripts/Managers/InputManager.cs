@@ -55,7 +55,7 @@ public class InputManager : Singleton<InputManager>, IManager
     void Update()
     {
         _moveDir = _arcadeActions.FindAction("Move").ReadValue<Vector2>();
-        Debug.Log("Vecteur moveDir " + _moveDir);
+        //Debug.Log("Vecteur moveDir " + _moveDir);
         _boost = _arcadeActions.FindAction("Accelerate").ReadValue<float>();
         _brake = _arcadeActions.FindAction("Decelerate").ReadValue<float>();
         //MOVEDIR
