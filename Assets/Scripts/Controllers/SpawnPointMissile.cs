@@ -10,16 +10,15 @@ public class SpawnPointMissile : MonoBehaviour
     {
         if (FindAnyObjectByType<CharacterController>())
             _currentMissile = FindAnyObjectByType<CharacterController>().gameObject;
-        CharacterManager.Instance.MissileUsed = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_currentMissile == null)
+        if (_currentMissile == null && !LevelManager.Instance.LevelFinished)
         {
             _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position, Quaternion.identity);
-            CharacterManager.Instance.MissileUsed++;
+            LevelManager.Instance.MissileUsed++;
         }
     }
 }
