@@ -11,6 +11,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private GameObject _explosion;
     [SerializeField] private Color _forcedBoostColor;
     [SerializeField] private Color _forcedBrakeColor;
+    [SerializeField] private Color _invertedColor;
 
     [Header("Controls Settings")]
     [SerializeField] private float _highSpeed = 1.5f;
@@ -22,6 +23,7 @@ public class CharacterController : MonoBehaviour
 
     private bool _forcedBoost;
     private bool _forcedBrake;
+    private bool _inverted;
     private bool _die = false;
     #endregion Fields
 
@@ -47,6 +49,17 @@ public class CharacterController : MonoBehaviour
                 _spriteRenderer.color = _forcedBrakeColor;
         }
     }
+
+    public bool Inverted
+    {
+        get => _inverted;
+        set
+        {
+            _inverted = value;
+            if (_inverted)
+                _spriteRenderer.color = _invertedColor;
+        }
+    }
     #endregion Properties
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -65,7 +78,10 @@ public class CharacterController : MonoBehaviour
         //calcul de direction du missile
         if (InputManager.Instance.MoveDir != Vector2.zero)
         {
-            _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
+            if (_inverted)
+                _rotation = Vector2.SignedAngle(Vector2.up, -InputManager.Instance.MoveDir);
+            else
+                _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
             Debug.Log(_rotation);
         }
 
@@ -86,6 +102,25 @@ public class CharacterController : MonoBehaviour
             targetSpeed = _highSpeed;
         else if (_forcedBrake)
             targetSpeed = _slowSpeed;
+        else if (_inverted)
+        {
+            if (InputManager.Instance.Boost == 0 && InputManager.Instance.Brake != 0)
+            {
+                targetSpeed = _highSpeed;
+                _boutonFast = true;
+            }
+            else if (InputManager.Instance.Brake == 0 && InputManager.Instance.Boost != 0)
+            {
+                targetSpeed = _slowSpeed;
+                _boutonSlow = true;
+            }
+            else
+            {
+                targetSpeed = _speed;
+                _boutonFast = false;
+                _boutonSlow = false;
+            }
+        }
         else
         {
             if (InputManager.Instance.Boost != 0 && InputManager.Instance.Brake == 0)
