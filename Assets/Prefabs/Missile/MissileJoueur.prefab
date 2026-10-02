@@ -2446,6 +2446,7 @@ MonoBehaviour:
   _explosion: {fileID: 2698583633901585660, guid: e0cb93673ad744c468bc7b3e60cdf820, type: 3}
   _forcedBoostColor: {r: 1, g: 0.93333334, b: 0.23137255, a: 1}
   _forcedBrakeColor: {r: 0.23137255, g: 0.58431375, b: 1, a: 1}
+  _invertedColor: {r: 0.9882353, g: 0.23137255, b: 1, a: 1}
   _highSpeed: 15
   _speed: 10
   _slowSpeed: 5
