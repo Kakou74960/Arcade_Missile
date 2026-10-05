@@ -1,12 +1,20 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelMenu : MonoBehaviour
 {
-    [SerializeField] private string _currentLevel;
+    [Header("Main Menu Button")]
+    [SerializeField] private Button _mainMenuButton;
+    [SerializeField] private string _mainMenuLevel;
+    [Header("Retry Button")]
+    [SerializeField] private Button _retryButton;
+    [SerializeField] private string _retryLevel;
+    [Header("Next Level Button")]
+    [SerializeField] private Button _nextButton;
     [SerializeField] private string _nextLevel;
-    [SerializeField] private string _mainMenu;
+    [Header("Highscore")]
     [SerializeField] private TMP_Text _textMissile;
     [SerializeField] private TMP_Text _textTime;
 
@@ -17,6 +25,21 @@ public class LevelMenu : MonoBehaviour
 
     private void Start()
     {
+        if(_mainMenuLevel == string.Empty)
+        {
+            _mainMenuButton.gameObject.SetActive(false);
+        }
+
+        if (_retryLevel == string.Empty)
+        {
+            _retryButton.gameObject.SetActive(false);
+        }
+
+        if(_nextLevel == string.Empty)
+        {
+            _nextButton.gameObject.SetActive(false);
+        }
+
         gameObject.SetActive(false);
     }
 
@@ -31,12 +54,12 @@ public class LevelMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(_mainMenu);
+        SceneManager.LoadScene(_mainMenuLevel);
     }
 
     public void Retry()
     {
-        SceneManager.LoadScene(_currentLevel);
+        SceneManager.LoadScene(_retryLevel);
     }
 
     public void LevelSelector()
