@@ -2447,12 +2447,13 @@ MonoBehaviour:
   _forcedBoostColor: {r: 1, g: 0.93333334, b: 0.23137255, a: 1}
   _forcedBrakeColor: {r: 0.23137255, g: 0.58431375, b: 1, a: 1}
   _invertedColor: {r: 0.9882353, g: 0.23137255, b: 1, a: 1}
-  _highSpeed: 15
+  _highSpeed: 20
+  _highDampening: 1
   _speed: 10
+  _mediumDampening: 1
   _slowSpeed: 5
+  _slowDampening: 1
   _rotation: 0
-  _boutonFast: 0
-  _boutonSlow: 0
 --- !u!212 &2583451313177834398
 SpriteRenderer:
   serializedVersion: 3
@@ -2526,7 +2527,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0.2
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

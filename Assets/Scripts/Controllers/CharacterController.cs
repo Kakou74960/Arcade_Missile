@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -15,11 +16,14 @@ public class CharacterController : MonoBehaviour
 
     [Header("Controls Settings")]
     [SerializeField] private float _highSpeed = 1.5f;
+    [SerializeField] private float _highDampening = 1;
     [SerializeField] private float _speed = 1;
+    [SerializeField] private float _mediumDampening = 1.5f;
     [SerializeField] private float _slowSpeed = 0.5f;
+    [SerializeField] private float _slowDampening = 2;
     [SerializeField,Range(0,360)] private float _rotation = 0;
-    [SerializeField] private bool _boutonFast = false;
-    [SerializeField] private bool _boutonSlow = false;
+    //[SerializeField] private bool _boutonFast = false;
+    //[SerializeField] private bool _boutonSlow = false;
 
     private bool _forcedBoost;
     private bool _forcedBrake;
@@ -94,50 +98,51 @@ public class CharacterController : MonoBehaviour
         Die();
     }
 
+    #region Speed
     private void SpeedLogic()
     {
         // Force de propulsion du missile
         float targetSpeed = 0;
         if (_forcedBoost)
-            targetSpeed = _highSpeed;
+            targetSpeed = HighSpeed();
         else if (_forcedBrake)
-            targetSpeed = _slowSpeed;
+            targetSpeed = SlowSpeed();
         else if (_inverted)
         {
             if (InputManager.Instance.Boost == 0 && InputManager.Instance.Brake != 0)
             {
-                targetSpeed = _highSpeed;
-                _boutonFast = true;
+                targetSpeed = HighSpeed();
+                //_boutonFast = true;
             }
             else if (InputManager.Instance.Brake == 0 && InputManager.Instance.Boost != 0)
             {
-                targetSpeed = _slowSpeed;
-                _boutonSlow = true;
+                targetSpeed = SlowSpeed();
+                //_boutonSlow = true;
             }
             else
             {
-                targetSpeed = _speed;
-                _boutonFast = false;
-                _boutonSlow = false;
+                targetSpeed = NormalSpeed();
+                //_boutonFast = false;
+                //_boutonSlow = false;
             }
         }
         else
         {
             if (InputManager.Instance.Boost != 0 && InputManager.Instance.Brake == 0)
             {
-                targetSpeed = _highSpeed;
-                _boutonFast = true;
+                targetSpeed = HighSpeed();
+                //_boutonFast = true;
             }
             else if (InputManager.Instance.Brake != 0 && InputManager.Instance.Boost == 0)
             {
-                targetSpeed = _slowSpeed;
-                _boutonSlow = true;
+                targetSpeed = SlowSpeed();
+                //_boutonSlow = true;
             }
             else
             {
-                targetSpeed = _speed;
-                _boutonFast = false;
-                _boutonSlow = false;
+                targetSpeed = NormalSpeed();
+                //_boutonFast = false;
+                //_boutonSlow = false;
             }
         }
         Debug.Log("Missile speed : " + targetSpeed);
@@ -148,6 +153,25 @@ public class CharacterController : MonoBehaviour
         else
             _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
     }
+
+    private float HighSpeed()
+    {
+        _rb.linearDamping = _highDampening;
+        return _highSpeed;
+    }
+
+    private float NormalSpeed()
+    {
+        _rb.linearDamping = _mediumDampening;
+        return _speed;
+    }
+
+    private float SlowSpeed()
+    {
+        _rb.linearDamping = _slowDampening;
+        return _slowSpeed;
+    }
+    #endregion Speed
 
     public void Die()
     {

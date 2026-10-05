@@ -2933,18 +2933,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2796528010810857784, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
-      propertyPath: _speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796528010810857784, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
-      propertyPath: _highSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796528010810857784, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
-      propertyPath: _slowSpeed
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796528010810857784, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
       propertyPath: _parentExplosion
       value: 
       objectReference: {fileID: 1646413910}
