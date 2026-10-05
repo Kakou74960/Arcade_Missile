@@ -25,6 +25,7 @@ public class CharacterController : MonoBehaviour
     //[SerializeField] private bool _boutonFast = false;
     //[SerializeField] private bool _boutonSlow = false;
 
+    private bool _phasorState = false;
     private bool _forcedBoost;
     private bool _forcedBrake;
     private bool _inverted;
@@ -32,6 +33,19 @@ public class CharacterController : MonoBehaviour
     #endregion Fields
 
     #region Properties
+    public bool PhasorState
+    {
+        get => _phasorState;
+        set
+        {
+            _phasorState = value;
+            if (_phasorState)
+                _collider.isTrigger = true;
+            else
+                _collider.isTrigger = false;
+        }
+
+    }
     public bool ForcedBoost
     {
         get => _forcedBoost;
@@ -95,7 +109,16 @@ public class CharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Die();
+        if (!_phasorState)
+            Die();
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            PhasorState = false;
+        }
     }
 
     #region Speed
