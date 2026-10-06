@@ -25,6 +25,7 @@ public class CharacterController : MonoBehaviour
     //[SerializeField] private bool _boutonFast = false;
     //[SerializeField] private bool _boutonSlow = false;
 
+    private bool _electrifiedState = false;
     private bool _phasorState = false;
     private bool _forcedBoost;
     private bool _forcedBrake;
@@ -78,6 +79,8 @@ public class CharacterController : MonoBehaviour
                 _spriteRenderer.color = _invertedColor;
         }
     }
+
+    public bool ElectrifiedState { get => _electrifiedState; set => _electrifiedState = value; }
     #endregion Properties
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
