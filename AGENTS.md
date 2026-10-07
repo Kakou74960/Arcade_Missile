@@ -2,7 +2,7 @@
 - Project name: Arcade_Missile
 - Unity version: Unity 6000.6.3f1
 - Active game object:
-  - Name: Mur (4)
-  - Tag: Wall
-  - Layer: Wall
+  - Name: LeftPanel
+  - Tag: Untagged
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
