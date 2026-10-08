@@ -1529,6 +1529,42 @@ PrefabInstance:
       propertyPath: _parentExplosion
       value: 
       objectReference: {fileID: 1646413910}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[0].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219739344810318446, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
     - target: {fileID: 5865216796858233009, guid: 45efa424d58062a4594b6925b4fbcd9b, type: 3}
       propertyPath: m_Icon
       value: 
