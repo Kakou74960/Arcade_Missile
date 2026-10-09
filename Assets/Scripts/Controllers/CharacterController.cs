@@ -71,7 +71,10 @@ public class CharacterController : MonoBehaviour
         {
             _forcedBoost = value;
             if (_forcedBoost)
+            {
                 _spriteRenderer.color = _forcedBoostColor;
+                _changeSpriteRenderer.color = _forcedBoostColor;
+            }
         }
     }
 
@@ -82,7 +85,10 @@ public class CharacterController : MonoBehaviour
         {
             _forcedBrake = value;
             if (_forcedBrake)
+            {
                 _spriteRenderer.color = _forcedBrakeColor;
+                _changeSpriteRenderer.color = _forcedBrakeColor;
+            }
         }
     }
 
@@ -93,7 +99,10 @@ public class CharacterController : MonoBehaviour
         {
             _inverted = value;
             if (_inverted)
+            {
                 _spriteRenderer.color = _invertedColor;
+                _changeSpriteRenderer.color = _invertedColor;
+            }
         }
     }
 
