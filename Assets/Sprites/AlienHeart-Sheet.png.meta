@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 867db52a7eec53f43adca2440e685cb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 302072381668579247
+    second: AlienHeart-Sheet_0
+  - first:
+      213: -4406839213092848987
+    second: AlienHeart-Sheet_1
+  - first:
+      213: 2721080538975504530
+    second: AlienHeart-Sheet_2
+  - first:
+      213: -3875593837419150102
+    second: AlienHeart-Sheet_3
+  - first:
+      213: 1750377935144787931
+    second: AlienHeart-Sheet_4
+  - first:
+      213: 16446354805545804
+    second: AlienHeart-Sheet_5
+  - first:
+      213: 2751997387139103433
+    second: AlienHeart-Sheet_6
+  - first:
+      213: 8618183231370823866
+    second: AlienHeart-Sheet_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 136
+        height: 144
+      alignment: 9
+      pivot: {x: 0.4915821, y: 0.49734995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7dfcd0b3d213400800000000000000
+      internalID: 302072381668579247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 45
+        width: 138
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5110604, y: 0.5070665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aab6598513c7d2c0800000000000000
+      internalID: -4406839213092848987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 37
+        width: 138
+        height: 182
+      alignment: 9
+      pivot: {x: 0.5113344, y: 0.48925763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2980dd2555833c520800000000000000
+      internalID: 2721080538975504530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 47
+        width: 140
+        height: 158
+      alignment: 9
+      pivot: {x: 0.476491, y: 0.50208294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae440fa40ff173ac0800000000000000
+      internalID: -3875593837419150102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 59
+        width: 146
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49503228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf9cf645779a4810800000000000000
+      internalID: 1750377935144787931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 59
+        width: 136
+        height: 140
+      alignment: 9
+      pivot: {x: 0.47227567, y: 0.48530966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4bd8006fdd6a3000800000000000000
+      internalID: 16446354805545804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 61
+        width: 138
+        height: 136
+      alignment: 9
+      pivot: {x: 0.43382463, y: 0.48192143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9caba3bfa0f013620800000000000000
+      internalID: 2751997387139103433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienHeart-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 61
+        width: 132
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45476463, y: 0.48192143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab80613ecffe99770800000000000000
+      internalID: 8618183231370823866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05567643a4b4f51478e285d98bd315f4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlienHeart-Sheet_0: 302072381668579247
+      AlienHeart-Sheet_1: -4406839213092848987
+      AlienHeart-Sheet_2: 2721080538975504530
+      AlienHeart-Sheet_3: -3875593837419150102
+      AlienHeart-Sheet_4: 1750377935144787931
+      AlienHeart-Sheet_5: 16446354805545804
+      AlienHeart-Sheet_6: 2751997387139103433
+      AlienHeart-Sheet_7: 8618183231370823866
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
