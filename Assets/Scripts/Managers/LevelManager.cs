@@ -60,6 +60,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
     {
         TimeSpent = 0;
         MissileUsed = 0;
+        LevelFinished = false;
     }
 
     private void CountTimeLevel()
