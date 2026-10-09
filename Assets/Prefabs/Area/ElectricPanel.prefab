@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7420882645098846995}
   - component: {fileID: 4937900016361696822}
   - component: {fileID: 701035443110392136}
-  - component: {fileID: 8457405911882945189}
+  - component: {fileID: 2809771573199550997}
   m_Layer: 0
   m_Name: ElectricPanel
   m_TagString: Untagged
@@ -47,6 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElectricPanel
   _activated: 0
+  _spriteRenderer: {fileID: 701035443110392136}
+  _panelSprites:
+  - {fileID: -2222885812917285064, guid: 3d20f6e0b9081214880422fdfe9a38c1, type: 3}
+  - {fileID: 7445051173677149434, guid: 3d20f6e0b9081214880422fdfe9a38c1, type: 3}
 --- !u!212 &701035443110392136
 SpriteRenderer:
   serializedVersion: 3
@@ -96,19 +100,19 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.18431373, g: 0.8000001, b: 0.09411766, a: 1}
+  m_Sprite: {fileID: -2222885812917285064, guid: 3d20f6e0b9081214880422fdfe9a38c1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3, y: 1.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!60 &8457405911882945189
-PolygonCollider2D:
+--- !u!61 &2809771573199550997
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,16 +148,12 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3, y: 1.94}
+    newSize: {x: 1.3, y: 1.94}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
-  m_UseDelaunayMesh: 1
+  m_Size: {x: 1.3, y: 1.92}
+  m_EdgeRadius: 0
