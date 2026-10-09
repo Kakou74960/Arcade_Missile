@@ -2391,6 +2391,8 @@ MonoBehaviour:
   _forcedBoostColor: {r: 1, g: 0.93333334, b: 0.23137255, a: 1}
   _forcedBrakeColor: {r: 0.23137255, g: 0.58431375, b: 1, a: 1}
   _invertedColor: {r: 0.9882353, g: 0.23137255, b: 1, a: 1}
+  _normalSprite: {fileID: 21300000, guid: 52adf8e74e0fb9143b4cce65fee91a6d, type: 3}
+  _phasedStateSprite: {fileID: 21300000, guid: 5de77a5423d708d4fa087acf6fd4dd26, type: 3}
   _highSpeed: 20
   _highDampening: 1
   _speed: 10

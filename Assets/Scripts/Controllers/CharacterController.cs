@@ -14,6 +14,10 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Color _forcedBrakeColor;
     [SerializeField] private Color _invertedColor;
 
+    [Header("State Sprite")]
+    [SerializeField] private Sprite _normalSprite;
+    [SerializeField] private Sprite _phasedStateSprite;
+
     [Header("Controls Settings")]
     [SerializeField] private float _highSpeed = 1.5f;
     [SerializeField] private float _highDampening = 1;
@@ -41,9 +45,15 @@ public class CharacterController : MonoBehaviour
         {
             _phasorState = value;
             if (_phasorState)
+            {
                 _collider.isTrigger = true;
+                _spriteRenderer.sprite = _phasedStateSprite;
+            }
             else
+            {
                 _collider.isTrigger = false;
+                _spriteRenderer.sprite = _normalSprite;
+            }
         }
 
     }
