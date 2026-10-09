@@ -9,6 +9,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Collider2D _collider;
     [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Animator _missileAnimator;
+    [SerializeField] private SpriteRenderer _changeSpriteRenderer;
     [SerializeField] private GameObject _explosion;
     [SerializeField] private Color _forcedBoostColor;
     [SerializeField] private Color _forcedBrakeColor;
@@ -43,16 +45,21 @@ public class CharacterController : MonoBehaviour
         get => _phasorState;
         set
         {
-            _phasorState = value;
-            if (_phasorState)
+            if (value != _phasorState)
             {
-                _collider.isTrigger = true;
-                _spriteRenderer.sprite = _phasedStateSprite;
-            }
-            else
-            {
-                _collider.isTrigger = false;
-                _spriteRenderer.sprite = _normalSprite;
+                _phasorState = value;
+                if (_phasorState)
+                {
+                    _collider.isTrigger = true;
+                    _changeSpriteRenderer.sprite = _phasedStateSprite;
+                    _missileAnimator.SetTrigger("ChangeSprite");
+                }
+                else
+                {
+                    _collider.isTrigger = false;
+                    _changeSpriteRenderer.sprite = _normalSprite;
+                    _missileAnimator.SetTrigger("ChangeSprite");
+                }
             }
         }
 
@@ -208,6 +215,11 @@ public class CharacterController : MonoBehaviour
         return _slowSpeed;
     }
     #endregion Speed
+
+    private void ChangeSprite()
+    {
+        _spriteRenderer.sprite = _changeSpriteRenderer.sprite;
+    }
 
     public void Die()
     {
