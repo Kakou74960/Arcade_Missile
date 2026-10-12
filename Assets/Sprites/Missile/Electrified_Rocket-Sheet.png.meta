@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 571fc51a39154134a9de9dbf5baf6cab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8407667782667859197
+    second: Electrified_Rocket-Sheet_0
+  - first:
+      213: -8561638265135971487
+    second: Electrified_Rocket-Sheet_1
+  - first:
+      213: 1813993140193085644
+    second: Electrified_Rocket-Sheet_2
+  - first:
+      213: -6351690256047962617
+    second: Electrified_Rocket-Sheet_3
+  - first:
+      213: 3239427348101432459
+    second: Electrified_Rocket-Sheet_4
+  - first:
+      213: 5965829098932591785
+    second: Electrified_Rocket-Sheet_5
+  - first:
+      213: 5479398187466933690
+    second: Electrified_Rocket-Sheet_6
+  - first:
+      213: 1594877367806974325
+    second: Electrified_Rocket-Sheet_7
+  - first:
+      213: -7072587464585488206
+    second: Electrified_Rocket-Sheet_8
+  - first:
+      213: -6485207913582003079
+    second: Electrified_Rocket-Sheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4f9677d490ea470800000000000000
+      internalID: 8407667782667859197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163cd2ffb53fe2980800000000000000
+      internalID: -8561638265135971487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8443a66299c2910800000000000000
+      internalID: 1813993140193085644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70683f46d534ad7a0800000000000000
+      internalID: -6351690256047962617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8485478202c4fc20800000000000000
+      internalID: 3239427348101432459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9acd09805f1eac250800000000000000
+      internalID: 5965829098932591785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1
+        width: 164
+        height: 240
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5c2e2de9bba0c40800000000000000
+      internalID: 5479398187466933690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1
+        width: 168
+        height: 240
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579d1781484222610800000000000000
+      internalID: 1594877367806974325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1
+        width: 164
+        height: 240
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b850825c2f19dd90800000000000000
+      internalID: -7072587464585488206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrified_Rocket-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c746043c9eff5a0800000000000000
+      internalID: -6485207913582003079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 17e63320f57064f4d8d72cea3d8b6dd7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Electrified_Rocket-Sheet_0: 8407667782667859197
+      Electrified_Rocket-Sheet_1: -8561638265135971487
+      Electrified_Rocket-Sheet_2: 1813993140193085644
+      Electrified_Rocket-Sheet_3: -6351690256047962617
+      Electrified_Rocket-Sheet_4: 3239427348101432459
+      Electrified_Rocket-Sheet_5: 5965829098932591785
+      Electrified_Rocket-Sheet_6: 5479398187466933690
+      Electrified_Rocket-Sheet_7: 1594877367806974325
+      Electrified_Rocket-Sheet_8: -7072587464585488206
+      Electrified_Rocket-Sheet_9: -6485207913582003079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

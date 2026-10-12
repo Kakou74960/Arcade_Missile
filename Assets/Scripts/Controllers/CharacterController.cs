@@ -106,7 +106,20 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public bool ElectrifiedState { get => _electrifiedState; set => _electrifiedState = value; }
+    public bool ElectrifiedState
+    {
+        get => _electrifiedState;
+        set
+        {
+            _electrifiedState = value;
+            if(_electrifiedState)
+            {
+                _missileAnimator.SetBool("Electrified", true);
+            }
+            else
+                _missileAnimator.SetBool("Electrified", false);
+        }
+    }
     #endregion Properties
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

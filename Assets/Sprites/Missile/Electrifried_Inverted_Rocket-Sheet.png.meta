@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 531e20d6f1881c54c840e09d1846cc4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3550118421820019355
+    second: Electrifried_Inverted_Rocket-Sheet_0
+  - first:
+      213: -2518392385447168055
+    second: Electrifried_Inverted_Rocket-Sheet_1
+  - first:
+      213: -1473749411961314995
+    second: Electrifried_Inverted_Rocket-Sheet_2
+  - first:
+      213: -1358283980417735206
+    second: Electrifried_Inverted_Rocket-Sheet_3
+  - first:
+      213: -8439653028637305479
+    second: Electrifried_Inverted_Rocket-Sheet_4
+  - first:
+      213: -1145649135288853444
+    second: Electrifried_Inverted_Rocket-Sheet_5
+  - first:
+      213: 580785868150815285
+    second: Electrifried_Inverted_Rocket-Sheet_6
+  - first:
+      213: 5301032645610371496
+    second: Electrifried_Inverted_Rocket-Sheet_7
+  - first:
+      213: -3894320273193037683
+    second: Electrifried_Inverted_Rocket-Sheet_8
+  - first:
+      213: 5848549932324522656
+    second: Electrifried_Inverted_Rocket-Sheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92172335ed844130800000000000000
+      internalID: 3550118421820019355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c77f5ce77fdc0dd0800000000000000
+      internalID: -2518392385447168055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41ea14d7b03c8be0800000000000000
+      internalID: -1473749411961314995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5e8139ae7662de0800000000000000
+      internalID: -1358283980417735206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9751680294450ea80800000000000000
+      internalID: -8439653028637305479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cdfdd6e26d910f0800000000000000
+      internalID: -1145649135288853444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1
+        width: 164
+        height: 240
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a32b18bad5f0800800000000000000
+      internalID: 580785868150815285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1
+        width: 168
+        height: 240
+      alignment: 9
+      pivot: {x: 0.485, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9fa58ea1d019940800000000000000
+      internalID: 5301032645610371496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1
+        width: 164
+        height: 240
+      alignment: 9
+      pivot: {x: 0.49, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d801ab2385894f9c0800000000000000
+      internalID: -3894320273193037683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electrifried_Inverted_Rocket-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 1
+        width: 162
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa865f2d293a2150800000000000000
+      internalID: 5848549932324522656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bf9f10f84619f924199bc0c27af239ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Electrifried_Inverted_Rocket-Sheet_0: 3550118421820019355
+      Electrifried_Inverted_Rocket-Sheet_1: -2518392385447168055
+      Electrifried_Inverted_Rocket-Sheet_2: -1473749411961314995
+      Electrifried_Inverted_Rocket-Sheet_3: -1358283980417735206
+      Electrifried_Inverted_Rocket-Sheet_4: -8439653028637305479
+      Electrifried_Inverted_Rocket-Sheet_5: -1145649135288853444
+      Electrifried_Inverted_Rocket-Sheet_6: 580785868150815285
+      Electrifried_Inverted_Rocket-Sheet_7: 5301032645610371496
+      Electrifried_Inverted_Rocket-Sheet_8: -3894320273193037683
+      Electrifried_Inverted_Rocket-Sheet_9: 5848549932324522656
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
