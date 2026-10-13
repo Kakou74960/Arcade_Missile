@@ -22,10 +22,13 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Animator _invertedMissileAnim;
 
     [Header("Controls Settings")]
+    [SerializeField] private ParticleSystem _highSpeedParticle;
     [SerializeField] private float _highSpeed = 1.5f;
     [SerializeField] private float _highDampening = 1;
-    [SerializeField] private float _speed = 1;
+    [SerializeField] private ParticleSystem _mediumSpeedParticle;
+    [SerializeField] private float _mediumSpeed = 1;
     [SerializeField] private float _mediumDampening = 1.5f;
+    [SerializeField] private ParticleSystem _lowSpeedParticle;
     [SerializeField] private float _slowSpeed = 0.5f;
     [SerializeField] private float _slowDampening = 2;
     [SerializeField,Range(0,360)] private float _rotation = 0;
@@ -225,19 +228,32 @@ public class CharacterController : MonoBehaviour
     private float HighSpeed()
     {
         _rb.linearDamping = _highDampening;
+        StopSpeedParticles();
+        _highSpeedParticle.Play();
         return _highSpeed;
     }
 
     private float NormalSpeed()
     {
         _rb.linearDamping = _mediumDampening;
-        return _speed;
+        StopSpeedParticles();
+        _mediumSpeedParticle.Play();
+        return _mediumSpeed;
     }
 
     private float SlowSpeed()
     {
         _rb.linearDamping = _slowDampening;
+        StopSpeedParticles();
+        _lowSpeedParticle.Play();
         return _slowSpeed;
+    }
+
+    private void StopSpeedParticles()
+    {
+        _highSpeedParticle.Stop();
+        _mediumSpeedParticle.Stop();
+        _lowSpeedParticle.Stop();
     }
     #endregion Speed
 
