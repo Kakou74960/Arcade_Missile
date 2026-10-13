@@ -56,6 +56,8 @@ public class LevelManager : Singleton<LevelManager>, IManager
         }
     }
 
+
+
     private void OnLevelWasLoaded()
     {
         TimeSpent = 0;
