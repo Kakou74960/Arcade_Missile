@@ -8,17 +8,18 @@ public class CharacterController : MonoBehaviour
     [Header("Character Settings")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Collider2D _collider;
-    [SerializeField] private SpriteRenderer _spriteRenderer;
-    [SerializeField] private Animator _missileAnimator;
-    [SerializeField] private SpriteRenderer _changeSpriteRenderer;
     [SerializeField] private GameObject _explosion;
     [SerializeField] private Color _forcedBoostColor;
     [SerializeField] private Color _forcedBrakeColor;
     [SerializeField] private Color _invertedColor;
 
-    [Header("State Sprite")]
-    [SerializeField] private Sprite _normalSprite;
-    [SerializeField] private Sprite _phasedStateSprite;
+    [Header("Normal State")]
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private Animator _missileAnimator;
+
+    [Header("Phased State")]
+    [SerializeField] private SpriteRenderer _changeSpriteRenderer;
+    [SerializeField] private Animator _invertedMissileAnim;
 
     [Header("Controls Settings")]
     [SerializeField] private float _highSpeed = 1.5f;
@@ -51,14 +52,12 @@ public class CharacterController : MonoBehaviour
                 if (_phasorState)
                 {
                     _collider.isTrigger = true;
-                    _changeSpriteRenderer.sprite = _phasedStateSprite;
-                    _missileAnimator.SetTrigger("ChangeSprite");
+                    _missileAnimator.SetBool("Phased", true);
                 }
                 else
                 {
                     _collider.isTrigger = false;
-                    _changeSpriteRenderer.sprite = _normalSprite;
-                    _missileAnimator.SetTrigger("ChangeSprite");
+                    _missileAnimator.SetBool("Phased", false);
                 }
             }
         }
@@ -112,12 +111,16 @@ public class CharacterController : MonoBehaviour
         set
         {
             _electrifiedState = value;
-            if(_electrifiedState)
+            if (_electrifiedState)
             {
                 _missileAnimator.SetBool("Electrified", true);
+                _invertedMissileAnim.SetBool("Electrified", true);
             }
             else
+            {
                 _missileAnimator.SetBool("Electrified", false);
+                _invertedMissileAnim.SetBool("Electrified", false);
+            }
         }
     }
     #endregion Properties
@@ -237,11 +240,6 @@ public class CharacterController : MonoBehaviour
         return _slowSpeed;
     }
     #endregion Speed
-
-    private void ChangeSprite()
-    {
-        _spriteRenderer.sprite = _changeSpriteRenderer.sprite;
-    }
 
     public void Die()
     {
