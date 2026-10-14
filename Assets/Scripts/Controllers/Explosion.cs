@@ -25,6 +25,13 @@ public class Explosion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        if (collision.GetComponent<TargetController>())
+        {
+            TargetController heart = collision.GetComponent<TargetController>();
+            heart.transform.rotation = this.transform.rotation;
+            heart.Die();
+        }
+        else
+            Destroy(collision.gameObject);
     }
 }

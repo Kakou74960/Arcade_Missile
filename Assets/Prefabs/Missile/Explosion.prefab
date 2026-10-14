@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Explosion
   _radiusExplosion: 10
   _timeExplosion: 0.1
+  _heart: {fileID: 2617007845847820672, guid: 859aef2a300e1c341933533700fd58d2, type: 3}
 --- !u!212 &5998812533924908241
 SpriteRenderer:
   serializedVersion: 3
