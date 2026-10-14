@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPointMissile
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: 52adf8e74e0fb9143b4cce65fee91a6d, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
