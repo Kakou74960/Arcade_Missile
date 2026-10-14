@@ -257,10 +257,19 @@ public class CharacterController : MonoBehaviour
     }
     #endregion Speed
 
+    private void DetachParticles()
+    {
+        StopSpeedParticles();
+        _highSpeedParticle.transform.parent = null;
+        _mediumSpeedParticle.transform.parent = null;
+        _lowSpeedParticle.transform.parent = null;
+    }
+
     public void Die()
     {
         if(!_die)
         {
+            DetachParticles();
             Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
             _die = true;
