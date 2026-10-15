@@ -105,8 +105,6 @@ GameObject:
   - component: {fileID: 6677291498277967904}
   - component: {fileID: 4935058045802136850}
   - component: {fileID: 3457796627578996251}
-  - component: {fileID: 2491924970334802829}
-  - component: {fileID: 83918936162800905}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -145,7 +143,6 @@ MonoBehaviour:
   _rb: {fileID: 4935058045802136850}
   _target: {fileID: 0}
   _speed: 10
-  _navAgent: {fileID: 2491924970334802829}
 --- !u!212 &6677291498277967904
 SpriteRenderer:
   serializedVersion: 3
@@ -219,7 +216,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -296,37 +293,3 @@ PolygonCollider2D:
       - {x: 0.5, y: 0.21421915}
       - {x: 0.5, y: 0.5}
   m_UseDelaunayMesh: 1
---- !u!195 &2491924970334802829
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7440384115546940556}
-  m_Enabled: 1
-  m_AgentTypeID: -1372625422
-  m_Radius: 0.75
-  m_Speed: 20
-  m_Acceleration: 40
-  avoidancePriority: 50
-  m_AngularSpeed: 240
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
-  m_AutoRepath: 1
-  m_Height: 1.5
-  m_BaseOffset: 0.75
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
---- !u!114 &83918936162800905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7440384115546940556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e39f6090724e4a4a8aadeb042afa2bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Extensions.AgentOverride2d

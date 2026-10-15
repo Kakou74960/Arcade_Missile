@@ -28,7 +28,7 @@ public class Explosion : MonoBehaviour
         if (collision.GetComponent<TargetController>())
         {
             TargetController heart = collision.GetComponent<TargetController>();
-            heart.transform.up = heart.transform.position - this.gameObject.transform.position;
+            heart.transform.rotation = this.transform.rotation;
             heart.Die();
         }
         else

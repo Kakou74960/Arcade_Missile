@@ -148,7 +148,7 @@ public class CharacterController : MonoBehaviour
                 _rotation = Vector2.SignedAngle(Vector2.up, -InputManager.Instance.MoveDir);
             else
                 _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
-            //Debug.Log(_rotation);
+            Debug.Log(_rotation);
         }
 
         //rotation du missile
