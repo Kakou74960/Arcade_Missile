@@ -229,6 +229,7 @@ public class CharacterController : MonoBehaviour
     {
         _rb.linearDamping = _highDampening;
         StopSpeedParticles();
+        _highSpeedParticle.gameObject.SetActive(true);
         _highSpeedParticle.Play();
         return _highSpeed;
     }
@@ -237,6 +238,7 @@ public class CharacterController : MonoBehaviour
     {
         _rb.linearDamping = _mediumDampening;
         StopSpeedParticles();
+        _mediumSpeedParticle.gameObject.SetActive(true);
         _mediumSpeedParticle.Play();
         return _mediumSpeed;
     }
@@ -245,6 +247,7 @@ public class CharacterController : MonoBehaviour
     {
         _rb.linearDamping = _slowDampening;
         StopSpeedParticles();
+        _lowSpeedParticle.gameObject.SetActive(true);
         _lowSpeedParticle.Play();
         return _slowSpeed;
     }
