@@ -47,10 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c35accbc628e4a469913508eb47e893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosion
-  _radiusExplosion: 10
-  _timeExplosion: 0.5
-  _delayExplosion: 0.5
   _explosionTrigger: {fileID: 7965108288211944648}
+  _radiusExplosion: 10
+  _timeExplosion: 0.3
+  _delayExplosion: 0.1
 --- !u!212 &5998812533924908241
 SpriteRenderer:
   serializedVersion: 3
@@ -118,7 +118,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2698583633901585660}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
