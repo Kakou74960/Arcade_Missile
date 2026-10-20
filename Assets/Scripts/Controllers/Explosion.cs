@@ -4,6 +4,8 @@ public class Explosion : MonoBehaviour
 {
     [SerializeField] private float _radiusExplosion = 10f;
     [SerializeField] private float _timeExplosion = 1f;
+    [SerializeField] private float _delayExplosion = 0.5f;
+    [SerializeField] private Collider2D _explosionTrigger;
 
     private float _currentTime = 0;
 
