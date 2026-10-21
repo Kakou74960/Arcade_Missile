@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2bf3ae2fe3567bb419a1803a7f65e1f6
+guid: f7769866227707743bc65199608d48cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8275679079122369404
-    second: Backward_Human_Wall_0
+      213: 4629829469603301919
+    second: Backward_Human_Wall 1_0
   - first:
-      213: -136997334142189227
-    second: Backward_Human_Wall_1
+      213: -4797589508785908237
+    second: Backward_Human_Wall 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -118,10 +118,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 48487c559b1e62d80800000000000000
-      internalID: -8275679079122369404
+      spriteID: 7b0267aa66b22e647960f23117481dec
+      internalID: 213675575
       vertices: []
       indices: 
       edges: []
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4f7bc9099781047bbf18b49274eb1e
-      internalID: -136997334142189227
+      spriteID: e52a05a208d80744cb717a7861258179
+      internalID: -929856356
       vertices: []
       indices: 
       edges: []
@@ -164,30 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73315a3a6901f26429fa214d797ea9da
-      internalID: 1579805752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e46ab0e72fdecd42a01416e46a6cde0
-      internalID: -29673172
+      spriteID: 0a9c72c24066d8546be6322b4abcf2b7
+      internalID: 1121195102
       vertices: []
       indices: 
       edges: []
@@ -208,96 +186,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 095869fa398440d4aabb72954bc12348
-      internalID: -696436131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57c6eabedd43e8b428a5b3ada0b47f42
-      internalID: -377522644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f41612cd7e0c364eb52bf35f81a14e6
-      internalID: 583283760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87606d4cdf2d492449fb43f9af047f32
-      internalID: -392291765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_8
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98395c54ee224cc4d8404b960df3f401
-      internalID: 1214393722
+      spriteID: 6bee4b81fc559c54c97c874ad07e3f70
+      internalID: 1380628256
       vertices: []
       indices: 
       edges: []
@@ -318,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0f65b7eb74eb24da70c75b3a1ed9c2
-      internalID: 1506926616
+      spriteID: d0557414c0019514a90e75d03c8baa5c
+      internalID: -1060077572
       vertices: []
       indices: 
       edges: []
@@ -340,8 +230,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b2343685eedc347b62c44599c94037
-      internalID: 1360453188
+      spriteID: 3ae4a6c3b5967cb42875982eef3bc929
+      internalID: 793982568
       vertices: []
       indices: 
       edges: []
@@ -352,7 +242,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 192
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -362,30 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22d484ac5ce42774ca60a7d39fa1aa4b
-      internalID: 67172010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_13
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a700315e5a6c9945bf21b325e526f06
-      internalID: -1930983775
+      spriteID: eaf2dc838dbda3b42a05066270590bb7
+      internalID: -1164495357
       vertices: []
       indices: 
       edges: []
@@ -406,96 +274,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7233ecca010e78a4ea3e9feaf75b1f23
-      internalID: -1522629966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_15
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5ef05dc20e7747488cbdd293425a22c
-      internalID: -1257220482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 369fa38ec8b2fa44894125d49710bd2c
-      internalID: 1640212818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_18
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a61c006f2b8394e46bb0cebed7b0beef
-      internalID: -869921389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Human_Wall_19
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86c386dbc7e863549b9f5c3083d1f81b
-      internalID: 503177153
+      spriteID: d0d35313e410eef4cb9c8898d9112902
+      internalID: -612342458
       vertices: []
       indices: 
       edges: []
@@ -504,7 +284,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5efad942bea028f48879c611290202cf
+    spriteID: baafa60d126949c4aa3acda164d51da0
     internalID: 0
     vertices: []
     indices: 
@@ -516,26 +296,26 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":10.0},"gridSpriteSize":{"x":31.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Backward_Human_Wall_0: -8275679079122369404
-      Backward_Human_Wall_1: -136997334142189227
-      Backward_Human_Wall_10: 1360453188
-      Backward_Human_Wall_11: 67172010
-      Backward_Human_Wall_12: -444059380
-      Backward_Human_Wall_13: -1930983775
-      Backward_Human_Wall_14: -1522629966
-      Backward_Human_Wall_15: -1257220482
-      Backward_Human_Wall_16: 677336753
-      Backward_Human_Wall_17: 1640212818
-      Backward_Human_Wall_18: -869921389
-      Backward_Human_Wall_19: 503177153
-      Backward_Human_Wall_2: 1579805752
-      Backward_Human_Wall_3: -29673172
-      Backward_Human_Wall_4: -696436131
-      Backward_Human_Wall_5: -377522644
-      Backward_Human_Wall_6: 583283760
-      Backward_Human_Wall_7: -392291765
-      Backward_Human_Wall_8: 1214393722
-      Backward_Human_Wall_9: 1506926616
+      Backward_Human_Wall_0: 213675575
+      Backward_Human_Wall_1: -929856356
+      Backward_Human_Wall_10: 793982568
+      Backward_Human_Wall_11: -1164495357
+      Backward_Human_Wall_12: -504471282
+      Backward_Human_Wall_13: 26447133
+      Backward_Human_Wall_14: -612342458
+      Backward_Human_Wall_15: 1337288805
+      Backward_Human_Wall_16: -1935178996
+      Backward_Human_Wall_17: -1279254142
+      Backward_Human_Wall_18: -729074297
+      Backward_Human_Wall_19: -474266633
+      Backward_Human_Wall_2: 1121195102
+      Backward_Human_Wall_3: 1385956920
+      Backward_Human_Wall_4: 1380628256
+      Backward_Human_Wall_5: -315920237
+      Backward_Human_Wall_6: -1178568681
+      Backward_Human_Wall_7: 460164235
+      Backward_Human_Wall_8: 1985098814
+      Backward_Human_Wall_9: -1060077572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
