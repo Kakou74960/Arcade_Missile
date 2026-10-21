@@ -1,1 +1,2 @@
-Assets/Scenes/Level 6.unity
+Assets/Scenes/PersistentManager.unity
+Assets/Scenes/Level 1.unity
