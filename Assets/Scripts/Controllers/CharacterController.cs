@@ -31,6 +31,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private ParticleSystem _lowSpeedParticle;
     [SerializeField] private float _slowSpeed = 0.5f;
     [SerializeField] private float _slowDampening = 2;
+    [SerializeField] private ParticleSystem _smokeParticle;
     [SerializeField,Range(0,360)] private float _rotation = 0;
     //[SerializeField] private bool _boutonFast = false;
     //[SerializeField] private bool _boutonSlow = false;
@@ -263,9 +264,11 @@ public class CharacterController : MonoBehaviour
     private void DetachParticles()
     {
         StopSpeedParticles();
+        _smokeParticle.Stop();
         _highSpeedParticle.transform.parent = null;
         _mediumSpeedParticle.transform.parent = null;
         _lowSpeedParticle.transform.parent = null;
+        _smokeParticle.transform.parent = null;
     }
 
     public void Die()

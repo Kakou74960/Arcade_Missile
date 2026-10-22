@@ -7,6 +7,7 @@ public class TargetController : MonoBehaviour
     [Header("Particle Systems")]
     [SerializeField] private ParticleSystem _smallParticle;
     [SerializeField] private ParticleSystem _bigParticle;
+    [SerializeField] private ParticleSystem _smokeParticle;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +29,8 @@ public class TargetController : MonoBehaviour
         _smallParticle.transform.parent = null;
         _bigParticle.Play();
         _bigParticle.transform.parent = null;
+        _smokeParticle.Play();
+        _smokeParticle.transform.parent = null;
         Destroy(gameObject);
     }
 
