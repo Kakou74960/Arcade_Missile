@@ -1,0 +1,786 @@
+fileFormatVersion: 2
+guid: a2a5f8f3f89cfb445be596bc09127618
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7717780554354264
+    second: ExplosionMissile-Sheet_0
+  - first:
+      213: 7852077547145882973
+    second: ExplosionMissile-Sheet_1
+  - first:
+      213: 90865894816394315
+    second: ExplosionMissile-Sheet_2
+  - first:
+      213: -2460147459874466329
+    second: ExplosionMissile-Sheet_3
+  - first:
+      213: 2089151148647763012
+    second: ExplosionMissile-Sheet_4
+  - first:
+      213: -3269008931547297923
+    second: ExplosionMissile-Sheet_5
+  - first:
+      213: 603697214991381600
+    second: ExplosionMissile-Sheet_6
+  - first:
+      213: 7440694545538032756
+    second: ExplosionMissile-Sheet_7
+  - first:
+      213: -8729135444946689306
+    second: ExplosionMissile-Sheet_8
+  - first:
+      213: 5572223818188092602
+    second: ExplosionMissile-Sheet_9
+  - first:
+      213: 7928900508511771289
+    second: ExplosionMissile-Sheet_10
+  - first:
+      213: -5172373040207342145
+    second: ExplosionMissile-Sheet_11
+  - first:
+      213: 2324996269852863220
+    second: ExplosionMissile-Sheet_12
+  - first:
+      213: 4543347995032289382
+    second: ExplosionMissile-Sheet_13
+  - first:
+      213: 5192334714373410139
+    second: ExplosionMissile-Sheet_14
+  - first:
+      213: 1937020606212248617
+    second: ExplosionMissile-Sheet_15
+  - first:
+      213: 2106517603348058773
+    second: ExplosionMissile-Sheet_16
+  - first:
+      213: 7771155142591551490
+    second: ExplosionMissile-Sheet_17
+  - first:
+      213: -5917172197747000075
+    second: ExplosionMissile-Sheet_18
+  - first:
+      213: 2085658795491997575
+    second: ExplosionMissile-Sheet_19
+  - first:
+      213: 7365304814731106501
+    second: ExplosionMissile-Sheet_20
+  - first:
+      213: -6927928208484639271
+    second: ExplosionMissile-Sheet_21
+  - first:
+      213: 205880695140467388
+    second: ExplosionMissile-Sheet_22
+  - first:
+      213: 6575094893865108317
+    second: ExplosionMissile-Sheet_23
+  - first:
+      213: -2401164495364772801
+    second: ExplosionMissile-Sheet_24
+  - first:
+      213: -2922168988119107188
+    second: ExplosionMissile-Sheet_25
+  - first:
+      213: -2493883987947651033
+    second: ExplosionMissile-Sheet_26
+  - first:
+      213: -5955615270822971040
+    second: ExplosionMissile-Sheet_27
+  - first:
+      213: 1361029331203922457
+    second: ExplosionMissile-Sheet_28
+  - first:
+      213: 8331698637093922886
+    second: ExplosionMissile-Sheet_29
+  - first:
+      213: 7165564026843713705
+    second: ExplosionMissile-Sheet_30
+  - first:
+      213: -7773686877721694639
+    second: ExplosionMissile-Sheet_31
+  - first:
+      213: -423478642985806956
+    second: ExplosionMissile-Sheet_32
+  - first:
+      213: -4736291273177921865
+    second: ExplosionMissile-Sheet_33
+  - first:
+      213: 6999349263030504564
+    second: ExplosionMissile-Sheet_34
+  - first:
+      213: 2075290287981574962
+    second: ExplosionMissile-Sheet_35
+  - first:
+      213: 6566836250297756240
+    second: ExplosionMissile-Sheet_36
+  - first:
+      213: -6390834039453842479
+    second: ExplosionMissile-Sheet_37
+  - first:
+      213: 5653220443161952763
+    second: ExplosionMissile-Sheet_38
+  - first:
+      213: -6558834792478058307
+    second: ExplosionMissile-Sheet_39
+  - first:
+      213: 586016263982509650
+    second: ExplosionMissile-Sheet_40
+  - first:
+      213: 7553687017147181028
+    second: ExplosionMissile-Sheet_41
+  - first:
+      213: -8286190137541219254
+    second: ExplosionMissile-Sheet_42
+  - first:
+      213: 6039049999439496515
+    second: ExplosionMissile-Sheet_43
+  - first:
+      213: 4041185070298387378
+    second: ExplosionMissile-Sheet_44
+  - first:
+      213: -1617356018667284479
+    second: ExplosionMissile-Sheet_45
+  - first:
+      213: -2735007453667123391
+    second: ExplosionMissile-Sheet_46
+  - first:
+      213: 7655099762796798877
+    second: ExplosionMissile-Sheet_47
+  - first:
+      213: -5263139386826715301
+    second: ExplosionMissile-Sheet_48
+  - first:
+      213: 7651652739440120597
+    second: ExplosionMissile-Sheet_49
+  - first:
+      213: -2563076045190911897
+    second: ExplosionMissile-Sheet_50
+  - first:
+      213: 6297220221690830129
+    second: ExplosionMissile-Sheet_51
+  - first:
+      213: -8962568222809783149
+    second: ExplosionMissile-Sheet_52
+  - first:
+      213: 1018545230865598760
+    second: ExplosionMissile-Sheet_53
+  - first:
+      213: 6651582230178985881
+    second: ExplosionMissile-Sheet_54
+  - first:
+      213: 3427925469588308985
+    second: ExplosionMissile-Sheet_55
+  - first:
+      213: 8061005398814374242
+    second: ExplosionMissile-Sheet_56
+  - first:
+      213: -1768102613521189688
+    second: ExplosionMissile-Sheet_57
+  - first:
+      213: -2852661876495524440
+    second: ExplosionMissile-Sheet_58
+  - first:
+      213: -5314588210062777320
+    second: ExplosionMissile-Sheet_59
+  - first:
+      213: -8916301012494245951
+    second: ExplosionMissile-Sheet_60
+  - first:
+      213: -6507483113442747702
+    second: ExplosionMissile-Sheet_61
+  - first:
+      213: 8783520169515435555
+    second: ExplosionMissile-Sheet_62
+  - first:
+      213: -4956228530737713380
+    second: ExplosionMissile-Sheet_63
+  - first:
+      213: -670182610289575315
+    second: ExplosionMissile-Sheet_64
+  - first:
+      213: -700520098353266470
+    second: ExplosionMissile-Sheet_65
+  - first:
+      213: -768766875542054839
+    second: ExplosionMissile-Sheet_66
+  - first:
+      213: -3293326395014455000
+    second: ExplosionMissile-Sheet_67
+  - first:
+      213: 7396370518711936671
+    second: ExplosionMissile-Sheet_68
+  - first:
+      213: -6318653829527595068
+    second: ExplosionMissile-Sheet_69
+  - first:
+      213: -4925030730967378055
+    second: ExplosionMissile-Sheet_70
+  - first:
+      213: 3219412730106137337
+    second: ExplosionMissile-Sheet_71
+  - first:
+      213: 8776328230131917585
+    second: ExplosionMissile-Sheet_72
+  - first:
+      213: 7759892179429066970
+    second: ExplosionMissile-Sheet_73
+  - first:
+      213: 48638975362484226
+    second: ExplosionMissile-Sheet_74
+  - first:
+      213: 1772619098800406476
+    second: ExplosionMissile-Sheet_75
+  - first:
+      213: 3825487934551573578
+    second: ExplosionMissile-Sheet_76
+  - first:
+      213: 3405739988229516547
+    second: ExplosionMissile-Sheet_77
+  - first:
+      213: -1742571958245219183
+    second: ExplosionMissile-Sheet_78
+  - first:
+      213: -1593587431738673196
+    second: ExplosionMissile-Sheet_79
+  - first:
+      213: -3371925972005389770
+    second: ExplosionMissile-Sheet_80
+  - first:
+      213: -5798795799536803539
+    second: ExplosionMissile-Sheet_81
+  - first:
+      213: -4461176003055075085
+    second: ExplosionMissile-Sheet_82
+  - first:
+      213: -425517143254754961
+    second: ExplosionMissile-Sheet_83
+  - first:
+      213: -7361112406196334021
+    second: ExplosionMissile-Sheet_84
+  - first:
+      213: -1852389046452206278
+    second: ExplosionMissile-Sheet_85
+  - first:
+      213: 1344316201016292978
+    second: ExplosionMissile-Sheet_86
+  - first:
+      213: 4201850123704308466
+    second: ExplosionMissile-Sheet_87
+  - first:
+      213: -2375351654692141533
+    second: ExplosionMissile-Sheet_88
+  - first:
+      213: -2885083114810718833
+    second: ExplosionMissile-Sheet_89
+  - first:
+      213: -5928602802571889526
+    second: ExplosionMissile-Sheet_90
+  - first:
+      213: 6768131867393925444
+    second: ExplosionMissile-Sheet_91
+  - first:
+      213: 2309025803593468249
+    second: ExplosionMissile-Sheet_92
+  - first:
+      213: 7863454457238205051
+    second: ExplosionMissile-Sheet_93
+  - first:
+      213: -2703068271645537134
+    second: ExplosionMissile-Sheet_94
+  - first:
+      213: -2256056631979256515
+    second: ExplosionMissile-Sheet_95
+  - first:
+      213: -3397441563340277041
+    second: ExplosionMissile-Sheet_96
+  - first:
+      213: -5256412847369561404
+    second: ExplosionMissile-Sheet_97
+  - first:
+      213: 7258157789250064348
+    second: ExplosionMissile-Sheet_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17a9f28b494eff0800000000000000
+      internalID: -7717780554354264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d63725dee28fc60800000000000000
+      internalID: 7852077547145882973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4caab6cc02d24100800000000000000
+      internalID: 90865894816394315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e55a1f6beccbddd0800000000000000
+      internalID: -2460147459874466329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ccf31a6e72efc10800000000000000
+      internalID: 2089151148647763012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d774b8b52b522a2d0800000000000000
+      internalID: -3269008931547297923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06434732b63c06800800000000000000
+      internalID: 603697214991381600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4742bf44448a24760800000000000000
+      internalID: 7440694545538032756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4032
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e26eafcf81ebd680800000000000000
+      internalID: -8729135444946689306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4721c2a04845d40800000000000000
+      internalID: 5572223818188092602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a124dd00d190e60800000000000000
+      internalID: 7928900508511771289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb552a4df1a0838b0800000000000000
+      internalID: -5172373040207342145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5824
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa20b00acb044020800000000000000
+      internalID: 2324996269852863220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6272
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66002e60ee63d0f30800000000000000
+      internalID: 4543347995032289382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d082d99e0ee0840800000000000000
+      internalID: 5192334714373410139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosionMissile-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92494e38afda1ea10800000000000000
+      internalID: 1937020606212248617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0b3e6f7a649846a4bb2475eeb33750ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":17.0,"y":1.0},"gridSpriteSize":{"x":448.0,"y":448.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ExplosionMissile-Sheet_0: -7717780554354264
+      ExplosionMissile-Sheet_1: 7852077547145882973
+      ExplosionMissile-Sheet_10: 7928900508511771289
+      ExplosionMissile-Sheet_11: -5172373040207342145
+      ExplosionMissile-Sheet_12: 2324996269852863220
+      ExplosionMissile-Sheet_13: 4543347995032289382
+      ExplosionMissile-Sheet_14: 5192334714373410139
+      ExplosionMissile-Sheet_15: 1937020606212248617
+      ExplosionMissile-Sheet_2: 90865894816394315
+      ExplosionMissile-Sheet_3: -2460147459874466329
+      ExplosionMissile-Sheet_4: 2089151148647763012
+      ExplosionMissile-Sheet_5: -3269008931547297923
+      ExplosionMissile-Sheet_6: 603697214991381600
+      ExplosionMissile-Sheet_7: 7440694545538032756
+      ExplosionMissile-Sheet_8: -8729135444946689306
+      ExplosionMissile-Sheet_9: 5572223818188092602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

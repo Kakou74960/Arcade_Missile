@@ -49,7 +49,7 @@ public class Turret : MonoBehaviour
             }
             else
                 _currentLockTime = 0;
-            Debug.Log("Turret raycast :" + turretRay.collider.gameObject);
+            //Debug.Log("Turret raycast :" + turretRay.collider.gameObject);
         }
     }
 

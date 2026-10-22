@@ -17,6 +17,7 @@ public class SpawnPointDrone : MonoBehaviour
         if (_currentDrone == null)
         {
             _currentDrone = Instantiate(_droneToSpawn, gameObject.transform.position, Quaternion.identity);
+            _currentDrone.GetComponent<Drone>().SpawnPoint = this.transform;
         }
     }
 }

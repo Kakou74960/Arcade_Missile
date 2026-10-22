@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9007066171082287473}
   - component: {fileID: 5998812533924908241}
   - component: {fileID: 7965108288211944648}
+  - component: {fileID: 8063456067433059679}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -46,9 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c35accbc628e4a469913508eb47e893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Explosion
+  _explosionTrigger: {fileID: 7965108288211944648}
   _radiusExplosion: 10
-  _timeExplosion: 0.1
-  _heart: {fileID: 2617007845847820672, guid: 859aef2a300e1c341933533700fd58d2, type: 3}
+  _timeExplosion: 0.3
+  _delayExplosion: 0.1
 --- !u!212 &5998812533924908241
 SpriteRenderer:
   serializedVersion: 3
@@ -116,7 +118,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2698583633901585660}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -145,3 +147,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!95 &8063456067433059679
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698583633901585660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f60402d734e6aa04f81a4e1aead35a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

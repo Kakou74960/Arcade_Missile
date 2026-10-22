@@ -31,6 +31,8 @@ public class Wind : MonoBehaviour
         if (collision.attachedRigidbody)
         {
             _objectsAffectedByWind.Remove(collision);
+            if (collision.GetComponent<Drone>())
+                collision.attachedRigidbody.linearVelocity = Vector2.zero;
         }
     }
 
