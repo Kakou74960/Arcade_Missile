@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: AlienWallRule
+  m_Name: Alien Wall Rule
   m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.RuleTile
-  m_DefaultSprite: {fileID: -553430222, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+  m_DefaultSprite: {fileID: -135333765, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 1
     m_Sprites:
-    - {fileID: 131080294, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+    - {fileID: -1308811446, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -36,7 +36,7 @@ MonoBehaviour:
     m_RuleTransform: 1
   - m_Id: 2
     m_Sprites:
-    - {fileID: 918057256, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+    - {fileID: 1337968729, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -53,8 +53,8 @@ MonoBehaviour:
     m_RuleTransform: 1
   - m_Id: 0
     m_Sprites:
-    - {fileID: -553430222, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
-    - {fileID: -1851540546, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+    - {fileID: 2664512265224544871, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
+    - {fileID: -2758458537861861359, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -70,7 +70,7 @@ MonoBehaviour:
     m_RuleTransform: 1
   - m_Id: 4
     m_Sprites:
-    - {fileID: 1168411498, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+    - {fileID: -1510753762, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
     m_RuleTransform: 5
   - m_Id: 5
     m_Sprites:
-    - {fileID: 1432390306, guid: acd3edab6fe459043a8649c75269b82a, type: 3}
+    - {fileID: -489252577, guid: bc5dc5df4e54c4544a2f4d855df8c15d, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
