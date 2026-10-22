@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc5dc5df4e54c4544a2f4d855df8c15d
+guid: f970b68d9493ebe46b0de9842109012c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,79 +111,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_1
+      name: Backward_Alien_Wall_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb25822eb8b19e4da5cc173c3a1bb3b
+      internalID: 1884653878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8f9ea24ecc2ba44a20ce1c29362395
+      internalID: -115016221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9735a5217e5e0504a975bb5645c17f85
+      internalID: -731829356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc48ea3ae00ae4438bb97cf32a08819
+      internalID: 164187448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da32e0a33aa0374fbdcf405d9b49d15
+      internalID: -498650362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab08f8a0551c1648ac53838046fa8ca
+      internalID: -1805279122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824f0db1606871947a33665c4752657a
+      internalID: -270137047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7677d4118aa449c46a006bebf433712c
+      internalID: 1267379794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d71ed62ce632b4cb6b341be947494f
+      internalID: -1188047863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_11
+      rect:
+        serializedVersion: 2
+        x: 512
         y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 762616cb9cf3af420800000000000000
-      internalID: 2664512265224544871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_2
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab01a199014df5eb0800000000000000
-      internalID: -4728827915962543942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 110b913239cf7b9d0800000000000000
-      internalID: -2758458537861861359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_5
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,64 +324,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ae05dfbde0d9234fabfae8f1d3ed2f1
-      internalID: 1789531334
+      spriteID: 71fea8d5534ef4f4dacb3a182837c385
+      internalID: 1593177005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_6
+      name: Backward_Alien_Wall_12
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3311b0abc8f2a9449af1a371c74f1b2
-      internalID: -281989071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_7
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0f2173a3edc4a641b79e1e175368dc0
-      internalID: -135333765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_8
-      rect:
-        serializedVersion: 2
-        x: 192
+        x: 0
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +346,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdd4837d5d93cb5439642a747a6bdaa7
-      internalID: -1510753762
+      spriteID: 9e29500d7f1c61143819e90d1c09c247
+      internalID: 656511524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_9
+      name: Backward_Alien_Wall_13
       rect:
         serializedVersion: 2
-        x: 224
+        x: 64
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +368,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afc495e1333cf8746bdf8c9b0efc9285
-      internalID: -489252577
+      spriteID: dd0a5682e007e1a479b16a4b099e6a90
+      internalID: -850415300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_10
+      name: Backward_Alien_Wall_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9f15c34129ecb4cbc5d825c9dae533
+      internalID: 2065324685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_15
       rect:
         serializedVersion: 2
         x: 256
         y: 128
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +412,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318b6836b38ab034f999cae3dad26014
-      internalID: -1308811446
+      spriteID: 3b6e85462dba18b40b01532ab3badf80
+      internalID: -1226280378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_11
+      name: Backward_Alien_Wall_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
-        width: 32
-        height: 32
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,20 +434,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07b34ee0acd7b374da868d6aac840ef3
-      internalID: 1337968729
+      spriteID: a6501b103ed45a54f8d0c018c16423b6
+      internalID: 1244906630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_12
+      name: Backward_Alien_Wall_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82fdf70f1487b84d8b812787538c9a8
+      internalID: 1023218112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_18
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,42 +478,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4e520ae6c29cc24a8b1e25d5230c101
-      internalID: 702004867
+      spriteID: c6c142b200b3590419ba8685a551dc80
+      internalID: -1478965021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18b207cf9b9e164498cd0893929bf12c
-      internalID: -1617698720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_14
+      name: Backward_Alien_Wall_19
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,64 +500,108 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11909ceacdbedf046a274e7aa1633510
-      internalID: -1315477195
+      spriteID: 6806b4acacb11ba4cbedd39e9032519a
+      internalID: -1713826335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_18
+      name: Backward_Alien_Wall_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b4c4fe8dbc33e44bc14eee4d90b4c7
+      internalID: -1182551238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a0dfd3492ddb74e9b8184cc5b600f2
+      internalID: -156937825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f083c9e56230cc147851d6cc240a4505
+      internalID: -19184724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee02d88601a644499b9aebdac5af877
+      internalID: 1140926313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66ff5a94a70b0fd478cc271005330bd9
-      internalID: -1856109001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_20
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49cd543549283044594ad9fc69e51cb8
-      internalID: 1568392343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_24
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,42 +610,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31067160fded17a449c003e30fcd82d1
-      internalID: 1297062556
+      spriteID: cb9884df4b5b7554db3f7273bc233790
+      internalID: -729634198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Backward_Alien_Wall 1_25
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3db2c03509827df4e9fb632ba41d893a
-      internalID: -166562069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Backward_Alien_Wall 1_26
+      name: Backward_Alien_Wall_25
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,8 +632,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94e8d86960ffca74ba1edc07be5373b6
-      internalID: 201008231
+      spriteID: db0a9f53172ad6c499407daa84e657ea
+      internalID: 1019695701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8a1e8dea4a224439e1f5d814100eb6
+      internalID: 746596444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e62bb9e2d42e042ab47f5920df0c1b
+      internalID: -654511845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fde1ef5dc040cd41bde8e2e1524d756
+      internalID: 1533683633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Backward_Alien_Wall_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0a5e8f6147b6f41a1caa0268a5296d
+      internalID: -1183210421
       vertices: []
       indices: 
       edges: []
@@ -510,7 +730,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4c2bed4caa1e00041b65bda77be08802
+    spriteID: 83849776abf5bbe458c28bfee1a3150a
     internalID: 0
     vertices: []
     indices: 
@@ -520,38 +740,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":10.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":10.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Backward_Alien_Wall 1_0: -3604925991865476267
-      Backward_Alien_Wall 1_1: 2664512265224544871
-      Backward_Alien_Wall 1_10: -1308811446
-      Backward_Alien_Wall 1_11: 1337968729
-      Backward_Alien_Wall 1_12: 702004867
-      Backward_Alien_Wall 1_13: -1617698720
-      Backward_Alien_Wall 1_14: -1315477195
-      Backward_Alien_Wall 1_15: -1003200021
-      Backward_Alien_Wall 1_16: -545981535
-      Backward_Alien_Wall 1_17: -1671598783
-      Backward_Alien_Wall 1_18: -1856109001
-      Backward_Alien_Wall 1_19: 186958996
-      Backward_Alien_Wall 1_2: -4728827915962543942
-      Backward_Alien_Wall 1_20: 1568392343
-      Backward_Alien_Wall 1_21: 477123783
-      Backward_Alien_Wall 1_22: 1848756827
-      Backward_Alien_Wall 1_23: -468050972
-      Backward_Alien_Wall 1_24: 1297062556
-      Backward_Alien_Wall 1_25: -166562069
-      Backward_Alien_Wall 1_26: 201008231
-      Backward_Alien_Wall 1_27: -1950316260
-      Backward_Alien_Wall 1_28: -104018025
-      Backward_Alien_Wall 1_29: -395698529
-      Backward_Alien_Wall 1_3: -2758458537861861359
-      Backward_Alien_Wall 1_4: 704959185
-      Backward_Alien_Wall 1_5: 1789531334
-      Backward_Alien_Wall 1_6: -281989071
-      Backward_Alien_Wall 1_7: -135333765
-      Backward_Alien_Wall 1_8: -1510753762
-      Backward_Alien_Wall 1_9: -489252577
+      Backward_Alien_Wall_0: -175887233
+      Backward_Alien_Wall_1: 1884653878
+      Backward_Alien_Wall_10: -1188047863
+      Backward_Alien_Wall_11: 1593177005
+      Backward_Alien_Wall_12: 656511524
+      Backward_Alien_Wall_13: -850415300
+      Backward_Alien_Wall_14: 2065324685
+      Backward_Alien_Wall_15: -1226280378
+      Backward_Alien_Wall_16: 1244906630
+      Backward_Alien_Wall_17: 1023218112
+      Backward_Alien_Wall_18: -1478965021
+      Backward_Alien_Wall_19: -1713826335
+      Backward_Alien_Wall_2: -115016221
+      Backward_Alien_Wall_20: -1182551238
+      Backward_Alien_Wall_21: -156937825
+      Backward_Alien_Wall_22: -19184724
+      Backward_Alien_Wall_23: 1140926313
+      Backward_Alien_Wall_24: -729634198
+      Backward_Alien_Wall_25: 1019695701
+      Backward_Alien_Wall_26: 746596444
+      Backward_Alien_Wall_27: -654511845
+      Backward_Alien_Wall_28: 1533683633
+      Backward_Alien_Wall_29: -1183210421
+      Backward_Alien_Wall_3: -731829356
+      Backward_Alien_Wall_4: 608604535
+      Backward_Alien_Wall_5: 164187448
+      Backward_Alien_Wall_6: -498650362
+      Backward_Alien_Wall_7: -1805279122
+      Backward_Alien_Wall_8: -270137047
+      Backward_Alien_Wall_9: 1267379794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
