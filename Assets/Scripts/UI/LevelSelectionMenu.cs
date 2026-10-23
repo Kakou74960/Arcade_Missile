@@ -10,7 +10,7 @@ public class LevelSelectionMenu : MonoBehaviour
     [SerializeField] private GameObject _defaultSelected;
 
     [SerializeField] private GameObject _mainMenu;
-    [SerializeField] private GameObject _selectecInMainMenu;
+    [SerializeField] private GameObject _selectedInMainMenu;
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class LevelSelectionMenu : MonoBehaviour
     public void ReturnMainMenu()
     {
         _mainMenu.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(_selectecInMainMenu);
+        EventSystem.current.SetSelectedGameObject(_selectedInMainMenu);
         this.gameObject.SetActive(false);
     }
 }
