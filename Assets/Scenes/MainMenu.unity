@@ -642,7 +642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _defaultSelected: {fileID: 1829913499}
   _levelSelectionMenu: {fileID: 715063924}
-  _selectedInLevelSelection: {fileID: 0}
+  _selectedInLevelSelection: {fileID: 944394667}
 --- !u!1 &715063924
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d7417ed80c9ec4ba1a0cb2d3073dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelectionMenu
-  _defaultSelected: {fileID: 0}
+  _defaultSelected: {fileID: 944394667}
   _mainMenu: {fileID: 577039857}
-  _selectedInMainMenu: {fileID: 0}
+  _selectedInMainMenu: {fileID: 1829913499}
 --- !u!1001 &850522220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1021,6 +1021,11 @@ PrefabInstance:
 --- !u!224 &944394666 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6980178832554513024, guid: 1162c88628bb562408ee584804d41170, type: 3}
+  m_PrefabInstance: {fileID: 944394665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &944394667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6783563844085456434, guid: 1162c88628bb562408ee584804d41170, type: 3}
   m_PrefabInstance: {fileID: 944394665}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1071956468
