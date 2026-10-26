@@ -220,9 +220,6 @@ public class CharacterController : MonoBehaviour
         Debug.Log("Missile speed : " + targetSpeed);
 
         //Change le calcul si dans l'editeur ou non
-        if (Application.isEditor)
-            _rb.AddForce(_rb.transform.up * targetSpeed);
-        else
             _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
     }
 

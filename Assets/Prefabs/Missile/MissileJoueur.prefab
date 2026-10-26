@@ -7259,13 +7259,13 @@ MonoBehaviour:
   _changeSpriteRenderer: {fileID: 7385740806768360449}
   _invertedMissileAnim: {fileID: 8736275848302613321}
   _highSpeedParticle: {fileID: 1675216033556237755}
-  _highSpeed: 20
+  _highSpeed: 2000
   _highDampening: 1
   _mediumSpeedParticle: {fileID: 3219739344810318446}
-  _mediumSpeed: 10
+  _mediumSpeed: 1000
   _mediumDampening: 1
   _lowSpeedParticle: {fileID: 7968991962735035837}
-  _slowSpeed: 5
+  _slowSpeed: 500
   _slowDampening: 1
   _smokeParticle: {fileID: 6866191527202203153}
   _rotation: 0
