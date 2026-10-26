@@ -45,6 +45,14 @@ public class LevelMenu : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    private void Update()
+    {
+        /// Si on perd la sélection
+        if (EventSystem.current.currentSelectedGameObject == null)
+            EventSystem.current.SetSelectedGameObject(_defaultSelected);
+    }
+
     private void OnApplicationFocus(bool focus)
     {
         if (focus)

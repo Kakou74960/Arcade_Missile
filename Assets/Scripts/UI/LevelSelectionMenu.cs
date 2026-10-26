@@ -47,6 +47,9 @@ public class LevelSelectionMenu : MonoBehaviour
             }
         }
 
+        /// Si on perd la sélection
+        if(EventSystem.current.currentSelectedGameObject == null)
+            EventSystem.current.SetSelectedGameObject(_defaultSelected);
     }
 
     private void OnApplicationFocus(bool focus)

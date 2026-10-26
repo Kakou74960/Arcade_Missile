@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9a7c053cb3b5e4282956f2aab8ed1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelMenu
-  _defaultSelected: {fileID: 0}
+  _defaultSelected: {fileID: 5124021082138465753}
   _mainMenuButton: {fileID: 0}
   _mainMenuLevel: MainMenu
   _retryButton: {fileID: 0}
@@ -754,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 25.4
+      value: 34.4
       objectReference: {fileID: 0}
     - target: {fileID: 4681204762354021835, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -857,6 +857,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1162c88628bb562408ee584804d41170, type: 3}
+--- !u!1 &5124021082138465753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6783563844085456434, guid: 1162c88628bb562408ee584804d41170, type: 3}
+  m_PrefabInstance: {fileID: 1817239174627740651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8783904716041001323 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6980178832554513024, guid: 1162c88628bb562408ee584804d41170, type: 3}
@@ -998,7 +1003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 16
+      value: 21.65
       objectReference: {fileID: 0}
     - target: {fileID: 4681204762354021835, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1120,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 23.95
+      value: 32.4
       objectReference: {fileID: 0}
     - target: {fileID: 4681204762354021835, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1242,7 +1247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 15.1
+      value: 20.45
       objectReference: {fileID: 0}
     - target: {fileID: 4681204762354021835, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

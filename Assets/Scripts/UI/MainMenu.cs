@@ -16,6 +16,12 @@ public class MainMenu : MonoBehaviour
     {
         //AudioManager.Instance.PlayMusic("MAIN_MENU_MUSIC");
     }
+    private void Update()
+    {
+        /// Si on perd la sélection
+        if (EventSystem.current.currentSelectedGameObject == null)
+            EventSystem.current.SetSelectedGameObject(_defaultSelected);
+    }
 
     private void OnApplicationFocus(bool focus)
     {
