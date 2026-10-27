@@ -529,6 +529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelMenu
   _defaultSelected: {fileID: 5124021082138465753}
+  _selectedSound: Hovered_Button
+  _pressedSound: Pressed_Button
   _mainMenuButton: {fileID: 0}
   _mainMenuLevel: MainMenu
   _retryButton: {fileID: 0}

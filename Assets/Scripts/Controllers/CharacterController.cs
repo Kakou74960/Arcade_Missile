@@ -12,6 +12,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Color _forcedBoostColor;
     [SerializeField] private Color _forcedBrakeColor;
     [SerializeField] private Color _invertedColor;
+    [SerializeField] private string _soundFlying;
 
     [Header("Normal State")]
     [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -42,6 +43,7 @@ public class CharacterController : MonoBehaviour
     private bool _forcedBrake;
     private bool _inverted;
     private bool _die = false;
+    private float _flySoundTime;
     #endregion Fields
 
     #region Properties
@@ -140,6 +142,14 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_flySoundTime >= 5.2f)
+        {
+            AudioManager.Instance.PlaySFXOneShot(_soundFlying);
+            _flySoundTime = 0;
+        }
+        else
+            _flySoundTime += Time.deltaTime;
+
         SpeedLogic();
 
         //calcul de direction du missile

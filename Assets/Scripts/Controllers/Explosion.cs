@@ -6,6 +6,7 @@ public class Explosion : MonoBehaviour
     [SerializeField] private float _radiusExplosion = 10f;
     [SerializeField] private float _timeExplosion = 1f;
     [SerializeField] private float _delayExplosion = 0.5f;
+    [SerializeField] private string _explosionSound = "Explosion";
 
     private float _currentTime = 0;
 
@@ -13,6 +14,7 @@ public class Explosion : MonoBehaviour
     void Start()
     {
         gameObject.transform.localScale = Vector3.one * _radiusExplosion;
+        AudioManager.Instance.PlaySFXOneShot(_explosionSound);
     }
 
     // Update is called once per frame

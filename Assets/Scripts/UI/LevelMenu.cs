@@ -4,10 +4,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelMenu : MonoBehaviour
+public class LevelMenu : MenuBase
 {
-    [SerializeField] private GameObject _defaultSelected;
-
     [Header("Main Menu Button")]
     [SerializeField] private Button _mainMenuButton;
     [SerializeField] private string _mainMenuLevel;
@@ -48,17 +46,7 @@ public class LevelMenu : MonoBehaviour
 
     private void Update()
     {
-        /// Si on perd la sélection
-        if (EventSystem.current.currentSelectedGameObject == null)
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
-    }
 
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
-        }
     }
 
     public void ShowScore()

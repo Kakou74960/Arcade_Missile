@@ -4,6 +4,7 @@ public class TargetController : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _rendererHeart;
     [SerializeField] private Collider2D _colliderHeart;
+    [SerializeField] private string _soundAtDeath;
     [Header("Particle Systems")]
     [SerializeField] private ParticleSystem[] _heartParticles;
 
@@ -23,6 +24,7 @@ public class TargetController : MonoBehaviour
     {
         _colliderHeart.enabled = false;
         _rendererHeart.enabled = false;
+        AudioManager.Instance.PlaySFXOneShot(_soundAtDeath);
         foreach (ParticleSystem particle in _heartParticles)
         {
             particle.Play();

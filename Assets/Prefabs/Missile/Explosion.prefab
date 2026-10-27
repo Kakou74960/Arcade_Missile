@@ -51,6 +51,7 @@ MonoBehaviour:
   _radiusExplosion: 10
   _timeExplosion: 0.3
   _delayExplosion: 0.1
+  _explosionSound: Explosion
 --- !u!212 &5998812533924908241
 SpriteRenderer:
   serializedVersion: 3

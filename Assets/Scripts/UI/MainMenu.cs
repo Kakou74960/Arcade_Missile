@@ -5,22 +5,20 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : MenuBase
 {
-    [SerializeField] private GameObject _defaultSelected;
+    [SerializeField] private string _musicMainMenu;
 
     [SerializeField] private GameObject _levelSelectionMenu;
     [SerializeField] private GameObject _selectedInLevelSelection;
 
     private void Start()
     {
-        //AudioManager.Instance.PlayMusic("MAIN_MENU_MUSIC");
+        AudioManager.Instance.PlayMusic(_musicMainMenu);
     }
     private void Update()
     {
-        /// Si on perd la sélection
-        if (EventSystem.current.currentSelectedGameObject == null)
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
+
     }
 
     private void OnApplicationFocus(bool focus)

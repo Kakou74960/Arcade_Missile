@@ -4757,6 +4757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TargetController
   _rendererHeart: {fileID: 5876389064385874724}
   _colliderHeart: {fileID: 2779748242363235435}
+  _soundAtDeath: Organic_Explosion
   _heartParticles:
   - {fileID: 8489669020595564468}
   - {fileID: 7621453874869468571}

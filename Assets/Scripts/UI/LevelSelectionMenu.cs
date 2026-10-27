@@ -7,10 +7,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelSelectionMenu : MonoBehaviour
+public class LevelSelectionMenu : MenuBase
 {
-    [SerializeField] private GameObject _defaultSelected;
-
     [SerializeField] private GameObject _mainMenu;
     [SerializeField] private GameObject _selectedInMainMenu;
 
@@ -45,18 +43,6 @@ public class LevelSelectionMenu : MonoBehaviour
                     _selectedButton = _levelButtons[i].gameObject;
                 }
             }
-        }
-
-        /// Si on perd la sélection
-        if(EventSystem.current.currentSelectedGameObject == null)
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
-    }
-
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
         }
     }
 

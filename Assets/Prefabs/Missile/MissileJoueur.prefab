@@ -7254,6 +7254,7 @@ MonoBehaviour:
   _forcedBoostColor: {r: 1, g: 0.93333334, b: 0.23137255, a: 1}
   _forcedBrakeColor: {r: 0.23137255, g: 0.58431375, b: 1, a: 1}
   _invertedColor: {r: 0.9882353, g: 0.23137255, b: 1, a: 1}
+  _soundFlying: Flying_Missile
   _spriteRenderer: {fileID: 2583451313177834398}
   _missileAnimator: {fileID: 7693414866752007280}
   _changeSpriteRenderer: {fileID: 7385740806768360449}
