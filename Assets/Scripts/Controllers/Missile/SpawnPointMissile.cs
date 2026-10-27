@@ -3,7 +3,11 @@ using UnityEngine;
 public class SpawnPointMissile : MonoBehaviour
 {
     [SerializeField] private GameObject _missileToSpawn;
+    [SerializeField] private string _spawnSound = "Launching_Missile";
+    [SerializeField] private float _delaySpawn = 0.5f;
+
     private GameObject _currentMissile;
+    private float _spawnTime = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,8 +21,15 @@ public class SpawnPointMissile : MonoBehaviour
     {
         if (_currentMissile == null && !LevelManager.Instance.LevelFinished)
         {
-            _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position, Quaternion.identity);
-            LevelManager.Instance.MissileUsed++;
+            if (_spawnTime >= _delaySpawn)
+            {
+                AudioManager.Instance.PlaySFXOneShot(_spawnSound);
+                _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position, Quaternion.identity);
+                LevelManager.Instance.MissileUsed++;
+                _spawnTime = 0;
+            }
+            else
+                _spawnTime += Time.deltaTime;
         }
     }
 }
