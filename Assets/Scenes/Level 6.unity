@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: _retryLevel
-      value: Level 5
+      value: Level 6
       objectReference: {fileID: 0}
     - target: {fileID: 4462299891374786506, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_AnchorMax.y

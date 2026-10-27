@@ -16,6 +16,7 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
         Instance = this;
         DontDestroyOnLoad(gameObject);
         _sounds = new Dictionary<string, SoundData>();
+        _musics = new Dictionary<string, SoundData>();
 
         for (int i = 0; i < _soundsArray.Length; i++)
         {

@@ -500,6 +500,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
+      propertyPath: _nextLevel
+      value: Level 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: _retryLevel
       value: Level 5
       objectReference: {fileID: 0}

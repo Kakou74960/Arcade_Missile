@@ -269,7 +269,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2735cc65f1edb3449a744033183bbefa, type: 2}
   - {fileID: 11400000, guid: ec05046f796e6f74dad695944b8d0ff3, type: 2}
   - {fileID: 11400000, guid: 6645662cd40ea9e478603b4c31ce2c7a, type: 2}
-  _musicsArray: []
+  _musicsArray:
+  - {fileID: 11400000, guid: 8eeee2f499fa7a34d9c2da331dad3d4a, type: 2}
+  - {fileID: 11400000, guid: b14941986e2f31242a3f72f5e31a6203, type: 2}
 --- !u!1 &1354718427
 GameObject:
   m_ObjectHideFlags: 0

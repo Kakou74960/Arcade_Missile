@@ -50,6 +50,8 @@ MonoBehaviour:
   _open: 0
   _doorAnimator: {fileID: 3297652308847072667}
   _electricPanel: {fileID: 0}
+  _openingSound: Door_Opening
+  _PressureSound: Depressurization
 --- !u!95 &3297652308847072667
 Animator:
   serializedVersion: 7
