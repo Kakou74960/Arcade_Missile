@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e20fcea3e37e754b9710c614e44ee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Phasor
+  _phasorSound: Phasing
 --- !u!212 &5703601457379901985
 SpriteRenderer:
   serializedVersion: 3
