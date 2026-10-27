@@ -12,6 +12,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Color _forcedBoostColor;
     [SerializeField] private Color _forcedBrakeColor;
     [SerializeField] private Color _invertedColor;
+    [SerializeField] private AudioSource _flySource;
     [SerializeField] private string _soundFlying;
 
     [Header("Normal State")]
@@ -136,6 +137,8 @@ public class CharacterController : MonoBehaviour
     {
         InputManager.Instance.Autodestruct.performed += ctx => Die();
         CharacterManager.Instance.CharacterController = this;
+        _flySource.clip = DatabaseManager.Instance.GetSFXByID(_soundFlying).AudioClip;
+        _flySource.Play();
     }
 
 
