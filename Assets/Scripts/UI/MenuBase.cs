@@ -28,12 +28,12 @@ public class MenuBase : MonoBehaviour
         }
     }
 
-    private void OnSelected()
+    public void OnSelected()
     {
         AudioManager.Instance.PlaySFXOneShot(_selectedSound);
     }
 
-    private void OnPressed()
+    public void OnPressed()
     {
         AudioManager.Instance.PlaySFXOneShot(_pressedSound);
     }

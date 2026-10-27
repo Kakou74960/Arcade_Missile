@@ -14,6 +14,11 @@ public class AudioManager : Singleton<AudioManager>, IManager
         _SFXSource.PlayOneShot(sound.AudioClip, sound.Volume);
     }
 
+    public void StopSFX()
+    {
+        _SFXSource.Stop();
+    }
+
     public void PlayMusic(string iD)
     {
         SoundData music = DatabaseManager.Instance.GetMusicByID(iD);

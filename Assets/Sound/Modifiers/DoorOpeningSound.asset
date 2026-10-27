@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DoorOpeningSound
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   _iD: Door_Opening
-  _audioClip: {fileID: 8300000, guid: 97ae1c86c56d37840ac9bd51abca8d79, type: 3}
+  _audioClip: {fileID: 8300000, guid: b6b55ee039275e74787bb9e6f4a3ff04, type: 3}
   _volume: 1

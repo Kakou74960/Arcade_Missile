@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ExplosionSound
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   _iD: Explosion
-  _audioClip: {fileID: 8300000, guid: edfc3c75cbb3dc24d8620eb97ab1679a, type: 3}
+  _audioClip: {fileID: 8300000, guid: fb787fd2fd18b5c46bdce678eb10efdd, type: 3}
   _volume: 1

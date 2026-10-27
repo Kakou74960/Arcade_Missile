@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691766cd127c3e64491a7a70353036c4, type: 3}
   m_Name: MusicMainMenu
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
-  _iD: EMPTY
-  _audioClip: {fileID: 0}
+  _iD: Main_Menu_Music
+  _audioClip: {fileID: 8300000, guid: 8add34fc294c99042a3db011a2336437, type: 3}
   _volume: 1

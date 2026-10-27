@@ -43,7 +43,7 @@ public class CharacterController : MonoBehaviour
     private bool _forcedBrake;
     private bool _inverted;
     private bool _die = false;
-    private float _flySoundTime;
+    private float _flySoundTime = 5;
     #endregion Fields
 
     #region Properties
@@ -142,14 +142,14 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_flySoundTime >= 5.2f)
+        /*if (_flySoundTime >= 5f)
         {
             AudioManager.Instance.PlaySFXOneShot(_soundFlying);
             _flySoundTime = 0;
         }
         else
             _flySoundTime += Time.deltaTime;
-
+        */
         SpeedLogic();
 
         //calcul de direction du missile
