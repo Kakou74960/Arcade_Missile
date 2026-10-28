@@ -3,6 +3,7 @@ using UnityEngine;
 public class SpawnPointMissile : MonoBehaviour
 {
     [SerializeField] private GameObject _missileToSpawn;
+    [SerializeField] private Animator _launcherAnimator;
     [SerializeField] private string _spawnSound = "Launching_Missile";
     [SerializeField] private float _delaySpawn = 0.5f;
 
@@ -26,10 +27,15 @@ public class SpawnPointMissile : MonoBehaviour
                 AudioManager.Instance.PlaySFXOneShot(_spawnSound);
                 _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position, Quaternion.identity);
                 LevelManager.Instance.MissileUsed++;
+                _launcherAnimator.SetTrigger("Close");
                 _spawnTime = 0;
             }
             else
+            {
+                if (_spawnTime == 0)
+                    _launcherAnimator.SetTrigger("Open");
                 _spawnTime += Time.deltaTime;
+            }
         }
     }
 }

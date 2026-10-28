@@ -42,6 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platform
+    uniqueID: 566287329
+    locked: 0
+  - name: Rocket
+    uniqueID: 3502833587
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
