@@ -9,7 +9,8 @@ using UnityEngine.UI;
 
 public class LevelSelectionMenu : MenuBase
 {
-    [SerializeField] private GameObject _mainMenu;
+    [Header("Level Selection Menu Settings")]
+    [SerializeField] private MainMenu _mainMenu;
     [SerializeField] private GameObject _selectedInMainMenu;
 
     [SerializeField] private Button[] _levelButtons;
@@ -48,7 +49,8 @@ public class LevelSelectionMenu : MenuBase
             }
         }
 
-        CenterElement(_selectedButton.GetComponent<RectTransform>());
+        if (_selectedButton != null)
+            CenterElement(_selectedButton.GetComponent<RectTransform>());
     }
 
     private void CenterElement(RectTransform elementTransform)
@@ -70,8 +72,11 @@ public class LevelSelectionMenu : MenuBase
 
     public void ReturnMainMenu()
     {
-        _mainMenu.SetActive(true);
+        TransitionSlide(Direction.RIGHT, true);
+        _mainMenu.gameObject.SetActive(true);
+        _mainMenu.TransitionSlide(Direction.LEFT, false);
+
         EventSystem.current.SetSelectedGameObject(_selectedInMainMenu);
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 }

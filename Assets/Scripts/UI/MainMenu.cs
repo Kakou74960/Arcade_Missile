@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MenuBase
 {
+    [Header("Main Menu Settings")]
     [SerializeField] private string _musicMainMenu;
 
-    [SerializeField] private GameObject _levelSelectionMenu;
+    [SerializeField] private LevelSelectionMenu _levelSelectionMenu;
     [SerializeField] private GameObject _selectedInLevelSelection;
 
     private void Start()
@@ -37,9 +38,12 @@ public class MainMenu : MenuBase
 
     public void LevelSelectionMenu()
     {
-        _levelSelectionMenu.SetActive(true);
+        TransitionSlide(Direction.LEFT, true);
+        _levelSelectionMenu.gameObject.SetActive(true);
+        _levelSelectionMenu.TransitionSlide(Direction.RIGHT, false);
+
         EventSystem.current.SetSelectedGameObject(_selectedInLevelSelection);
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 
     public void Quit()

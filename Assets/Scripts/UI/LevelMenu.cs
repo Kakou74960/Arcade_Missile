@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class LevelMenu : MenuBase
 {
+    [Header("Level Menu Settings")]
     [Header("Main Menu Button")]
     [SerializeField] private Button _mainMenuButton;
     [SerializeField] private string _mainMenuLevel;
