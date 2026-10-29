@@ -349,11 +349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: _nextLevel
-      value: Level 8
+      value: Level 9
       objectReference: {fileID: 0}
     - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: _retryLevel
-      value: Level 6
+      value: Level 8
       objectReference: {fileID: 0}
     - target: {fileID: 4462299891374786506, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_AnchorMax.y
@@ -74173,7 +74173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1216273615205668472, guid: bf3e16c2fa27c6848a1a628be6df3e4f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4838564106853069445, guid: bf3e16c2fa27c6848a1a628be6df3e4f, type: 3}
       propertyPath: m_IsActive
