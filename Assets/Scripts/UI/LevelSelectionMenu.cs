@@ -15,6 +15,9 @@ public class LevelSelectionMenu : MenuBase
     [SerializeField] private Button[] _levelButtons;
     [SerializeField] private string _overviewName;
     [SerializeField] private Animator[] _levelOverviews;
+    [Header("Scroll Settings")]
+    [SerializeField] private RectTransform _layoutTransform;
+    [SerializeField] private float _scrollStrength = 0.5f;
 
     private GameObject _selectedButton;
 
@@ -43,6 +46,19 @@ public class LevelSelectionMenu : MenuBase
                     _selectedButton = _levelButtons[i].gameObject;
                 }
             }
+        }
+
+        CenterElement(_selectedButton.GetComponent<RectTransform>());
+    }
+
+    private void CenterElement(RectTransform elementTransform)
+    {
+        if (elementTransform != null)
+        {
+            Vector3 relativeCenter = Vector3.zero;
+            relativeCenter.x = _layoutTransform.sizeDelta.x/2 - elementTransform.anchoredPosition.x;
+            relativeCenter.y = _layoutTransform.anchoredPosition.y;
+            _layoutTransform.anchoredPosition = Vector3.Lerp(_layoutTransform.anchoredPosition, relativeCenter, _scrollStrength);
         }
     }
 

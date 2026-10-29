@@ -137,6 +137,8 @@ MonoBehaviour:
   - {fileID: 5034012843355595306}
   - {fileID: 9159070366576407936}
   - {fileID: 8936173263005105829}
+  _layoutTransform: {fileID: 2448567756473801174}
+  _scrollStrength: 0.1
 --- !u!1 &7926954360664308968
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,10 +176,10 @@ RectTransform:
   - {fileID: 5941857297476630816}
   m_Father: {fileID: 7906005074138754891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -200}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 860, y: 135}
+  m_SizeDelta: {x: 1920, y: 810}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4211664211400420243
 MonoBehaviour:
@@ -196,10 +198,10 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildAlignment: 6
+  m_Spacing: 500
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
