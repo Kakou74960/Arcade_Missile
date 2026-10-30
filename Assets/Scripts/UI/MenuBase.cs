@@ -1,11 +1,14 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MenuBase : MonoBehaviour
 {
     [Header("Base Settings")]
     [SerializeField] protected Animator _baseMenuAnimator;
     [SerializeField] protected float _animSpeed = 1;
+    [SerializeField] protected float _transitionDelay = 1;
     [SerializeField] protected GameObject _defaultSelected;
     [SerializeField] protected string _selectedSound;
     [SerializeField] protected string _pressedSound;
@@ -62,6 +65,18 @@ public class MenuBase : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    protected IEnumerator LoadScene(string sceneName)
+    {
+        yield return new WaitForSeconds(_transitionDelay);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    protected IEnumerator MenuTransition(MenuBase newMenu, Direction dir, bool SlideOut)
+    {
+        yield return new WaitForSeconds(_transitionDelay);
+        newMenu.TransitionSlide(dir, SlideOut);
     }
 
     public void OnSelected()

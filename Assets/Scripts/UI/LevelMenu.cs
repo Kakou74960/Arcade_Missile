@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LevelMenu : MenuBase
 {
     [Header("Level Menu Settings")]
+    [SerializeField] private float _slideStrength = 1;
     [Header("Main Menu Button")]
     [SerializeField] private Button _mainMenuButton;
     [SerializeField] private string _mainMenuLevel;
@@ -19,6 +20,8 @@ public class LevelMenu : MenuBase
     [Header("Highscore")]
     [SerializeField] private TMP_Text _textMissile;
     [SerializeField] private TMP_Text _textTime;
+
+    private bool _goToLevels = false;
 
     private void Awake()
     {
@@ -47,7 +50,10 @@ public class LevelMenu : MenuBase
 
     private void Update()
     {
-
+        if (_goToLevels)
+        {
+            Camera.main.transform.position += Vector3.up * _slideStrength * Time.deltaTime;
+        }
     }
 
     public void ShowScore()
@@ -61,7 +67,9 @@ public class LevelMenu : MenuBase
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(_mainMenuLevel);
+        _goToLevels = true;
+        TransitionSlide(Direction.DOWN, true);
+        StartCoroutine(LoadScene(_mainMenuLevel));
     }
 
     public void Retry()
@@ -71,7 +79,9 @@ public class LevelMenu : MenuBase
 
     public void LevelSelector()
     {
-
+        _goToLevels = true;
+        TransitionSlide(Direction.DOWN, true);
+        StartCoroutine(LoadScene(_mainMenuLevel));
     }
 
     public void NextLevel()

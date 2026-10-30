@@ -33,14 +33,15 @@ public class MainMenu : MenuBase
     public void Play()
     {
         //AudioManager.Instance.PlaySFXOneShot("CLICK");
-        SceneManager.LoadScene("Game");
+        TransitionSlide(Direction.UP, true);
+        StartCoroutine(LoadScene("Game"));
     }
 
     public void LevelSelectionMenu()
     {
         TransitionSlide(Direction.LEFT, true);
         _levelSelectionMenu.gameObject.SetActive(true);
-        _levelSelectionMenu.TransitionSlide(Direction.RIGHT, false);
+        StartCoroutine(MenuTransition(_levelSelectionMenu, Direction.LEFT, false));
 
         EventSystem.current.SetSelectedGameObject(_selectedInLevelSelection);
         //this.gameObject.SetActive(false);

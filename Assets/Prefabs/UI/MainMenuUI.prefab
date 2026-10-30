@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseMenuAnimator: {fileID: 6428455844234494032}
   _animSpeed: 1
+  _transitionDelay: 1
   _defaultSelected: {fileID: 470578784407806337}
   _selectedSound: Hovered_Button
   _pressedSound: Pressed_Button

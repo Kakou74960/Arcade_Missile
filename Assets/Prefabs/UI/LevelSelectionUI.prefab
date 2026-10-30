@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSelectionMenu
   _baseMenuAnimator: {fileID: 8301312795641560473}
   _animSpeed: 1
+  _transitionDelay: 1
   _defaultSelected: {fileID: 4857489279526960495}
   _selectedSound: Hovered_Button
   _pressedSound: Pressed_Button
