@@ -608,7 +608,7 @@ MonoBehaviour:
   _defaultSelected: {fileID: 5124021082138465753}
   _selectedSound: Hovered_Button
   _pressedSound: Pressed_Button
-  _lerpStrength: 50
+  _slideStrength: 50
   _mainMenuButton: {fileID: 6471351106091236896}
   _mainMenuLevel: MainMenu
   _retryButton: {fileID: 676710545672452698}

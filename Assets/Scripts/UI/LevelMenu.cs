@@ -68,8 +68,9 @@ public class LevelMenu : MenuBase
     public void MainMenu()
     {
         _goToLevels = true;
+        UiManager.Instance.LoadToMainMenu = true;
         TransitionSlide(Direction.DOWN, true);
-        StartCoroutine(LoadScene(_mainMenuLevel));
+        StartCoroutine(LoadMainMenu());
     }
 
     public void Retry()
@@ -80,8 +81,9 @@ public class LevelMenu : MenuBase
     public void LevelSelector()
     {
         _goToLevels = true;
+        UiManager.Instance.LoadToLevelSelection = true;
         TransitionSlide(Direction.DOWN, true);
-        StartCoroutine(LoadScene(_mainMenuLevel));
+        StartCoroutine(LoadMainMenu());
     }
 
     public void NextLevel()

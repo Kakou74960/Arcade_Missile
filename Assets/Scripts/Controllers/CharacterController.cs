@@ -44,7 +44,6 @@ public class CharacterController : MonoBehaviour
     private bool _forcedBrake;
     private bool _inverted;
     private bool _die = false;
-    private float _flySoundTime = 5;
     #endregion Fields
 
     #region Properties

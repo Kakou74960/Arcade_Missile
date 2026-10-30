@@ -73,9 +73,16 @@ public class MenuBase : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    protected IEnumerator LoadMainMenu()
+    {
+        yield return new WaitForSeconds(_transitionDelay);
+        SceneManager.LoadScene("MainMenu");
+    }
+
     protected IEnumerator MenuTransition(MenuBase newMenu, Direction dir, bool SlideOut)
     {
         yield return new WaitForSeconds(_transitionDelay);
+        newMenu.gameObject.SetActive(true);
         newMenu.TransitionSlide(dir, SlideOut);
     }
 

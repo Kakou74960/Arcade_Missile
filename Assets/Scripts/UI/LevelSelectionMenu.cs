@@ -22,8 +22,14 @@ public class LevelSelectionMenu : MenuBase
 
     private GameObject _selectedButton;
 
+    private void Awake()
+    {
+        UiManager.Instance.LevelSelectionMenu = this;
+    }
+
     private void Start()
     {
+        EventSystem.current.SetSelectedGameObject(_defaultSelected);
         //AudioManager.Instance.PlayMusic("MAIN_MENU_MUSIC");
     }
 
@@ -74,7 +80,6 @@ public class LevelSelectionMenu : MenuBase
     public void ReturnMainMenu()
     {
         TransitionSlide(Direction.RIGHT, true);
-        _mainMenu.gameObject.SetActive(true);
         StartCoroutine(MenuTransition(_mainMenu, Direction.LEFT, false));
 
         EventSystem.current.SetSelectedGameObject(_selectedInMainMenu);

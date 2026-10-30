@@ -13,9 +13,15 @@ public class MainMenu : MenuBase
     [SerializeField] private LevelSelectionMenu _levelSelectionMenu;
     [SerializeField] private GameObject _selectedInLevelSelection;
 
+    private void Awake()
+    {
+        UiManager.Instance.MainMenu = this;
+    }
+
     private void Start()
     {
         AudioManager.Instance.PlayMusic(_musicMainMenu);
+        //DontDestroyOnLoad(this);
     }
     private void Update()
     {
@@ -40,8 +46,7 @@ public class MainMenu : MenuBase
     public void LevelSelectionMenu()
     {
         TransitionSlide(Direction.LEFT, true);
-        _levelSelectionMenu.gameObject.SetActive(true);
-        StartCoroutine(MenuTransition(_levelSelectionMenu, Direction.LEFT, false));
+        StartCoroutine(MenuTransition(_levelSelectionMenu, Direction.RIGHT, false));
 
         EventSystem.current.SetSelectedGameObject(_selectedInLevelSelection);
         //this.gameObject.SetActive(false);
