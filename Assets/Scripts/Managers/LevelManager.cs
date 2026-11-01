@@ -6,6 +6,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
     [SerializeField] private bool _levelFinished = false;
 
     private LevelMenu _levelMenu;
+    private HighscoreMenu _highscoreMenu;
     private int _missileUsed = 0;
     private float _timeSpent = 0;
     private int _objective = 0;
@@ -21,6 +22,12 @@ public class LevelManager : Singleton<LevelManager>, IManager
     {
         get => _levelMenu;
         set => _levelMenu = value;
+    }
+
+    public HighscoreMenu HighscoreMenu
+    {
+        get => _highscoreMenu;
+        set => _highscoreMenu = value;
     }
 
     public int MissileUsed

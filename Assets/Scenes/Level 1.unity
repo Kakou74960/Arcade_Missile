@@ -71716,6 +71716,18 @@ PrefabInstance:
       propertyPath: _retryLevel
       value: Level 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
+      propertyPath: _mainMenuName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
+      propertyPath: _nextLevelName
+      value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
+      propertyPath: _retryLevelName
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4750698384342291520, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_fontSize
       value: 21.65

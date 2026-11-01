@@ -10,18 +10,19 @@ public class LevelMenu : MenuBase
     [SerializeField] private float _slideStrength = 1;
     [Header("Main Menu Button")]
     [SerializeField] private Button _mainMenuButton;
-    [SerializeField] private string _mainMenuLevel;
+    [SerializeField] private string _mainMenuName;
     [Header("Retry Button")]
     [SerializeField] private Button _retryButton;
-    [SerializeField] private string _retryLevel;
+    [SerializeField] private string _retryLevelName;
     [Header("Next Level Button")]
     [SerializeField] private Button _nextButton;
-    [SerializeField] private string _nextLevel;
+    [SerializeField] private string _nextLevelName;
     [Header("Highscore")]
     [SerializeField] private TMP_Text _textMissile;
     [SerializeField] private TMP_Text _textTime;
 
     private bool _goToLevels = false;
+    private bool _goNextLevel = false;
 
     private void Awake()
     {
@@ -30,17 +31,17 @@ public class LevelMenu : MenuBase
 
     private void Start()
     {
-        if(_mainMenuLevel == string.Empty)
+        if(_mainMenuName == string.Empty)
         {
             _mainMenuButton.gameObject.SetActive(false);
         }
 
-        if (_retryLevel == string.Empty)
+        if (_retryLevelName == string.Empty)
         {
             _retryButton.gameObject.SetActive(false);
         }
 
-        if(_nextLevel == string.Empty)
+        if(_nextLevelName == string.Empty)
         {
             _nextButton.gameObject.SetActive(false);
         }
@@ -53,6 +54,10 @@ public class LevelMenu : MenuBase
         if (_goToLevels)
         {
             Camera.main.transform.position += Vector3.up * _slideStrength * Time.deltaTime;
+        }
+        if (_goNextLevel)
+        {
+            Camera.main.transform.position += Vector3.right * _slideStrength * 1.6f * Time.deltaTime;
         }
     }
 
@@ -75,7 +80,7 @@ public class LevelMenu : MenuBase
 
     public void Retry()
     {
-        SceneManager.LoadScene(_retryLevel);
+        SceneManager.LoadScene(_retryLevelName);
     }
 
     public void LevelSelector()
@@ -88,11 +93,15 @@ public class LevelMenu : MenuBase
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(_nextLevel);
+        _goNextLevel = true;
+        TransitionSlide(Direction.LEFT, true);
+        StartCoroutine(LoadScene(_nextLevelName));
+
     }
 
     public void Highscore()
     {
-
+        LevelManager.Instance.HighscoreMenu.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

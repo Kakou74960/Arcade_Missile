@@ -610,11 +610,11 @@ MonoBehaviour:
   _pressedSound: Pressed_Button
   _slideStrength: 50
   _mainMenuButton: {fileID: 6471351106091236896}
-  _mainMenuLevel: MainMenu
+  _mainMenuName: MainMenu
   _retryButton: {fileID: 676710545672452698}
-  _retryLevel: 
+  _retryLevelName: 
   _nextButton: {fileID: 1746216625645066925}
-  _nextLevel: 
+  _nextLevelName: 
   _textMissile: {fileID: 9098704331024303940}
   _textTime: {fileID: 7029591079034788645}
 --- !u!95 &2208536940484743735
