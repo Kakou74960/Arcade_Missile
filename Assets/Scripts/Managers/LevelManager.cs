@@ -54,13 +54,6 @@ public class LevelManager : Singleton<LevelManager>, IManager
     {
         if (!_levelFinished)
             CountTimeLevel();
-        
-        if (Objective == 0 && LevelMenu != null)
-        {
-            _levelFinished = true;
-            LevelMenu.gameObject.SetActive(true);
-            LevelMenu.ShowScore();
-        }
     }
 
 

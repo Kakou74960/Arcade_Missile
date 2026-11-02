@@ -18,7 +18,7 @@ public class HighscoreMenu : MenuBase
 
     private void Start()
     {
-        
+        EventSystem.current.SetSelectedGameObject(_defaultSelected);
     }
 
     private void Update()
@@ -28,6 +28,8 @@ public class HighscoreMenu : MenuBase
 
     public void ReturnToLevelMenu()
     {
-
+        LevelManager.Instance.LevelMenu.gameObject.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(LevelManager.Instance.LevelMenu.DefaultSelected);
+        this.gameObject.SetActive(false);
     }
 }

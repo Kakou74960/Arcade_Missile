@@ -36,5 +36,11 @@ public class TargetController : MonoBehaviour
     private void OnDestroy()
     {
         LevelManager.Instance.Objective--;
+        if (LevelManager.Instance.Objective == 0 && LevelManager.Instance.LevelMenu != null)
+        {
+            LevelManager.Instance.LevelFinished = true;
+            LevelManager.Instance.LevelMenu.gameObject.SetActive(true);
+            LevelManager.Instance.LevelMenu.ShowScore();
+        }
     }
 }

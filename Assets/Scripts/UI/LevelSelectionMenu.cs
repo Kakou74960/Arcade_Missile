@@ -11,7 +11,6 @@ public class LevelSelectionMenu : MenuBase
 {
     [Header("Level Selection Menu Settings")]
     [SerializeField] private MainMenu _mainMenu;
-    [SerializeField] private GameObject _selectedInMainMenu;
 
     [SerializeField] private Button[] _levelButtons;
     [SerializeField] private string _overviewName;
@@ -82,7 +81,7 @@ public class LevelSelectionMenu : MenuBase
         TransitionSlide(Direction.RIGHT, true);
         StartCoroutine(MenuTransition(_mainMenu, Direction.LEFT, false));
 
-        EventSystem.current.SetSelectedGameObject(_selectedInMainMenu);
+        EventSystem.current.SetSelectedGameObject(UiManager.Instance.MainMenu.DefaultSelected);
         //this.gameObject.SetActive(false);
     }
 }

@@ -13,6 +13,8 @@ public class MenuBase : MonoBehaviour
     [SerializeField] protected string _selectedSound;
     [SerializeField] protected string _pressedSound;
 
+    public GameObject DefaultSelected => _defaultSelected;
+
     public enum Direction
     {
         UP,

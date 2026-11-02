@@ -102,6 +102,7 @@ public class LevelMenu : MenuBase
     public void Highscore()
     {
         LevelManager.Instance.HighscoreMenu.gameObject.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(LevelManager.Instance.HighscoreMenu.DefaultSelected);
         this.gameObject.SetActive(false);
     }
 }

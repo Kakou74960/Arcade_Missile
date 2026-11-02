@@ -11,7 +11,6 @@ public class MainMenu : MenuBase
     [SerializeField] private string _musicMainMenu;
 
     [SerializeField] private LevelSelectionMenu _levelSelectionMenu;
-    [SerializeField] private GameObject _selectedInLevelSelection;
 
     private void Awake()
     {
@@ -28,14 +27,6 @@ public class MainMenu : MenuBase
 
     }
 
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
-        }
-    }
-
     public void Play()
     {
         //AudioManager.Instance.PlaySFXOneShot("CLICK");
@@ -48,7 +39,7 @@ public class MainMenu : MenuBase
         TransitionSlide(Direction.LEFT, true);
         StartCoroutine(MenuTransition(_levelSelectionMenu, Direction.RIGHT, false));
 
-        EventSystem.current.SetSelectedGameObject(_selectedInLevelSelection);
+        EventSystem.current.SetSelectedGameObject(UiManager.Instance.LevelSelectionMenu.DefaultSelected);
         //this.gameObject.SetActive(false);
     }
 

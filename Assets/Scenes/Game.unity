@@ -1370,38 +1370,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1840603931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1916708506912298220, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
-  m_PrefabInstance: {fileID: 7818187629119890518}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1840603936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840603931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76bf97dfc6d2c9c4b9db388d55027013, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HighscoreMenu
-  _baseMenuAnimator: {fileID: 0}
-  _animSpeed: 1
-  _transitionDelay: 1
-  _defaultSelected: {fileID: 0}
-  _selectedSound: 
-  _pressedSound: 
-  _slideStrength: 1
-  _mainMenuButton: {fileID: 0}
-  _mainMenuName: 
-  _retryButton: {fileID: 0}
-  _retryLevelName: 
-  _nextButton: {fileID: 0}
-  _nextLevelName: 
-  _textMissile: {fileID: 0}
-  _textTime: {fileID: 0}
 --- !u!1001 &2091594965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72747,6 +72715,10 @@ PrefabInstance:
       propertyPath: _retryLevelName
       value: Game
       objectReference: {fileID: 0}
+    - target: {fileID: 4189088182437799970, guid: 157a382d65f368f478596da8092202df, type: 3}
+      propertyPath: _selectedInHighScoreMenu
+      value: 
+      objectReference: {fileID: 7818187629119890519}
     - target: {fileID: 4462299891374786506, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -74946,6 +74918,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5611167932969010709, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
+      propertyPath: _selectedInLevelMenu
+      value: 
+      objectReference: {fileID: 1347553665431616132}
     - target: {fileID: 5623076014635081031, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -76149,11 +76125,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1916708506912298220, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1840603936}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
+--- !u!1 &7818187629119890519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4604873088717962812, guid: cbf69e241568aa0448624ca77b81c534, type: 3}
+  m_PrefabInstance: {fileID: 7818187629119890518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7893931888578893578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76233,6 +76211,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1317868899}
+  - {fileID: 7818187629119890518}
   - {fileID: 1347553665431616131}
   - {fileID: 1200133507}
   - {fileID: 153185559}
@@ -76241,4 +76220,3 @@ SceneRoots:
   - {fileID: 1646413910}
   - {fileID: 699327032}
   - {fileID: 1506336627}
-  - {fileID: 7818187629119890518}
