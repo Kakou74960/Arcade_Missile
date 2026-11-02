@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : Singleton<LevelManager>, IManager
@@ -10,6 +11,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
     private int _missileUsed = 0;
     private float _timeSpent = 0;
     private int _objective = 0;
+    private List<HighscoreStruct> _listHighscores = new();
 
     #region Properties
     public bool LevelFinished

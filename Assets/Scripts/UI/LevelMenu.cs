@@ -20,6 +20,7 @@ public class LevelMenu : MenuBase
     [Header("Highscore")]
     [SerializeField] private TMP_Text _textMissile;
     [SerializeField] private TMP_Text _textTime;
+    [SerializeField] private TMP_Text _newHighscoreText;
 
     private bool _goToLevels = false;
     private bool _goNextLevel = false;
@@ -68,6 +69,8 @@ public class LevelMenu : MenuBase
         float minutes = LevelManager.Instance.TimeSpent / 60;
         float seconds = LevelManager.Instance.TimeSpent % 60;
         _textTime.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        //DatabaseManager.Instance.SaveHighscores(, SceneManager.GetActiveScene().name);
     }
 
     public void MainMenu()
@@ -104,5 +107,13 @@ public class LevelMenu : MenuBase
         LevelManager.Instance.HighscoreMenu.gameObject.SetActive(true);
         EventSystem.current.SetSelectedGameObject(LevelManager.Instance.HighscoreMenu.DefaultSelected);
         this.gameObject.SetActive(false);
+    }
+
+    private void NewHighscore()
+    {
+        foreach (char c in _newHighscoreText.text)
+        {
+            
+        }
     }
 }
