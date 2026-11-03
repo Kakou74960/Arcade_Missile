@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : Singleton<LevelManager>, IManager
 {
@@ -50,6 +51,11 @@ public class LevelManager : Singleton<LevelManager>, IManager
         set => _objective = value;
     }
 
+    public List<HighscoreStruct> ListHighscores
+    {
+        get => _listHighscores;
+        set => _listHighscores = value;
+    }
     #endregion Properties
 
     private void Update()
@@ -65,6 +71,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
         TimeSpent = 0;
         MissileUsed = 0;
         LevelFinished = false;
+        ListHighscores = DatabaseManager.Instance.GetHighscores(SceneManager.GetActiveScene().name);
     }
 
     private void CountTimeLevel()

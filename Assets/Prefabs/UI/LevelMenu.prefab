@@ -617,6 +617,7 @@ MonoBehaviour:
   _nextLevelName: 
   _textMissile: {fileID: 9098704331024303940}
   _textTime: {fileID: 7029591079034788645}
+  _newHighscoreText: {fileID: 55330856239398606}
 --- !u!95 &2208536940484743735
 Animator:
   serializedVersion: 7
@@ -713,8 +714,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

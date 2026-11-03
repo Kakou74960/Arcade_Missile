@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class HighscoreMenu : MenuBase
 {
     [Header("Highscore Menu Settings")]
-    [SerializeField] private bool _nothing;
+    [SerializeField] private ScoreUi[] _scores;
 
     private void Awake()
     {
@@ -25,6 +25,19 @@ public class HighscoreMenu : MenuBase
     private void Update()
     {
         
+    }
+
+    public void UpdateScoreBoard()
+    {
+        for (int scoreIndex = 0; scoreIndex < LevelManager.Instance.ListHighscores.Count; scoreIndex++)
+        {
+            _scores[scoreIndex]._nameText.text = LevelManager.Instance.ListHighscores[scoreIndex].name;
+            _scores[scoreIndex]._rocketText.text = LevelManager.Instance.ListHighscores[scoreIndex].rocket.ToString();
+
+            float minutes = LevelManager.Instance.ListHighscores[scoreIndex].time / 60;
+            float seconds = LevelManager.Instance.ListHighscores[scoreIndex].time % 60;
+            _scores[scoreIndex]._timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 
     public void ReturnToLevelMenu()

@@ -24,6 +24,7 @@ public class LevelMenu : MenuBase
 
     private bool _goToLevels = false;
     private bool _goNextLevel = false;
+    private HighscoreStruct _currentScore = new();
 
     private void Awake()
     {
@@ -65,12 +66,20 @@ public class LevelMenu : MenuBase
     public void ShowScore()
     {
         _textMissile.text = LevelManager.Instance.MissileUsed.ToString();
+        
+        _currentScore.rocket = LevelManager.Instance.MissileUsed;
+        _currentScore.time = LevelManager.Instance.TimeSpent;
 
         float minutes = LevelManager.Instance.TimeSpent / 60;
         float seconds = LevelManager.Instance.TimeSpent % 60;
         _textTime.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        //DatabaseManager.Instance.SaveHighscores(, SceneManager.GetActiveScene().name);
+        if (DatabaseManager.Instance.CheckHighscore(_currentScore, SceneManager.GetActiveScene().name))
+        {
+            NewBestHighscore();
+            DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
+        }
+        DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
     }
 
     public void MainMenu()
@@ -105,15 +114,14 @@ public class LevelMenu : MenuBase
     public void Highscore()
     {
         LevelManager.Instance.HighscoreMenu.gameObject.SetActive(true);
+        LevelManager.Instance.HighscoreMenu.UpdateScoreBoard();
         EventSystem.current.SetSelectedGameObject(LevelManager.Instance.HighscoreMenu.DefaultSelected);
         this.gameObject.SetActive(false);
     }
 
-    private void NewHighscore()
+    private void NewBestHighscore()
     {
-        foreach (char c in _newHighscoreText.text)
-        {
-            
-        }
+        _baseMenuAnimator.SetTrigger("NewScore");
+        //DatabaseManager.Instance.SaveHighscore();
     }
 }

@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d93530c184758d46b6f70fce4dd1acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _saveFilesPath: 
+  _levelsName: 'Level '
   _soundsArray:
   - {fileID: 11400000, guid: fd24e3cd42bbc5348b3a6688d6e75f43, type: 2}
   - {fileID: 11400000, guid: 951e52be0161a0d45b125e1d23cc0651, type: 2}

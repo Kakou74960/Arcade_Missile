@@ -9,6 +9,7 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
 {
     #region Fields
     [SerializeField] private string _saveFilesPath;
+    [SerializeField] private string _levelsName;
     [SerializeField] private SoundData[] _soundsArray = null;
     [SerializeField] private SoundData[] _musicsArray = null;
 
@@ -22,7 +23,12 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
 
     private void Awake()
     {
-        _savePath = Application.persistentDataPath + _saveFilesPath;
+        _savePath = Path.Combine(Application.persistentDataPath, _saveFilesPath);
+    }
+
+    private void Start()
+    {
+        RecoverHighscoresFiles();
     }
 
     public override void Init()
@@ -52,44 +58,57 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
         return _musics[ID];
     }
 
+    public List<HighscoreStruct> GetHighscores(string sceneName)
+    {
+        if (_dicHighscores.ContainsKey(sceneName))
+            return _dicHighscores.GetValueOrDefault(sceneName);
+        return new();
+    }
+
     #region Save
     private void RecoverHighscoresFiles()
     {
-        int buildIndex = SceneManager.sceneCountInBuildSettings;
+        int levelIndex = SceneManager.sceneCountInBuildSettings - 3;
 
         // Pour chaque scène dans build Settings
-        for (int i = 0; i < buildIndex; i++)
+        for (int i = 1; i <= levelIndex; i++)
         {
             // Le chemin pour retrouver les fichiers de sauvegardes
-            string recoverPath = _savePath + SceneManager.GetSceneByBuildIndex(i).name + ".json";
+            string recoverPath = Path.Combine(_savePath, _levelsName + i) + ".json";
 
             if (File.Exists(recoverPath))
             {
                 // commande Json pour lire le texte
                 string json = File.ReadAllText(recoverPath);
                 // Convertit les listes du fichier en objets unity
-                _dicHighscores.Add(SceneManager.GetSceneByBuildIndex(i).name, JsonUtility.FromJson<List<HighscoreStruct>>(json));
+                _dicHighscores.Add(_levelsName + i, JsonUtility.FromJson<List<HighscoreStruct>>(json));
             }
             else
-                Debug.Log("fichier introuvable " + SceneManager.GetSceneByBuildIndex(i).name);
+                Debug.Log("fichier introuvable : " + recoverPath);
         }
     }
 
     public void SaveHighscoresFiles(List<HighscoreStruct> listData, string sceneName)
     {
         // commande Json pour écrire le texte
-        string json = JsonUtility.ToJson(listData , true);
+        string json = JsonUtility.ToJson(listData);
         // Écrit un fichier contenant les listes en Json
-        File.WriteAllText(_savePath + sceneName + ".json", json);
+        File.WriteAllText(Path.Combine(_savePath, sceneName) + ".json", json);
     }
 
     public void SaveHighscore(HighscoreStruct data, string sceneName)
     {
-        _dicHighscores.GetValueOrDefault(sceneName)[_indexToInsert] = data;
+        if (LevelManager.Instance.ListHighscores.Count == 0)
+            _dicHighscores.GetValueOrDefault(sceneName).Add(data);
+        else
+            _dicHighscores.GetValueOrDefault(sceneName).Insert(_indexToInsert, data);
+
+        LevelManager.Instance.ListHighscores = _dicHighscores.GetValueOrDefault(sceneName);
     }
 
-    public void CheckHighscore(HighscoreStruct data, string sceneName)
+    public bool CheckHighscore(HighscoreStruct data, string sceneName)
     {
+        bool newHighscore = false;
         if (_dicHighscores.ContainsKey(sceneName))
         {
             List<HighscoreStruct> listHighscores = _dicHighscores.GetValueOrDefault(sceneName);
@@ -103,7 +122,7 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
                     {
                         _indexToInsert = listHighscores.IndexOf(highscore);
                         //listHighscores.Insert(_indexToInsert, data);
-
+                        newHighscore = true;
                         // Ajouter un feedback de nouveau Highscore
                     }
                 }
@@ -114,9 +133,13 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
             {
                 listHighscores.RemoveAt(10);
             }
+            else if (listHighscores.Count < 10)
+                newHighscore = true;
         }
         else
-            Debug.LogError("No Level file found of name : " +  sceneName);
+            Debug.LogError("No Level file found of name : " + sceneName);
+
+        return newHighscore;
     }
     #endregion Save
 }
