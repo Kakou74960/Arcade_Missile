@@ -62,6 +62,7 @@ public class LevelMenu : MenuBase
             _nick[c] = 'A';
         }
 
+        _nicknameText.alpha = 0;
         gameObject.SetActive(false);
     }
 
@@ -209,6 +210,7 @@ public class LevelMenu : MenuBase
     private void NewBestHighscore()
     {
         _baseMenuAnimator.SetTrigger("NewScore");
+        _nicknameText.alpha = 1;
         LevelManager.Instance.ChangeNickname = true;
         EventSystem.current.SetSelectedGameObject(null);
         //DatabaseManager.Instance.SaveHighscore();
