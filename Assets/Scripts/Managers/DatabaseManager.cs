@@ -81,34 +81,43 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
                 // commande Json pour lire le texte
                 string json = File.ReadAllText(recoverPath);
                 // Convertit les listes du fichier en objets unity
-                _dicHighscores.Add(_levelsName + i, JsonUtility.FromJson<List<HighscoreStruct>>(json));
+                _dicHighscores.Add(_levelsName + i, JsonUtility.FromJson<SaveData>(json).saveHighscores);
             }
             else
+            {
                 Debug.Log("fichier introuvable : " + recoverPath);
+                _dicHighscores.Add(_levelsName + i, new List<HighscoreStruct>());
+            }
         }
     }
 
     public void SaveHighscoresFiles(List<HighscoreStruct> listData, string sceneName)
     {
+        SaveData save = new()
+        {
+            saveHighscores = listData
+        };
         // commande Json pour écrire le texte
-        string json = JsonUtility.ToJson(listData);
+        string json = JsonUtility.ToJson(save);
         // Écrit un fichier contenant les listes en Json
         File.WriteAllText(Path.Combine(_savePath, sceneName) + ".json", json);
     }
 
     public void SaveHighscore(HighscoreStruct data, string sceneName)
     {
-        if (LevelManager.Instance.ListHighscores.Count == 0)
-            _dicHighscores.GetValueOrDefault(sceneName).Add(data);
-        else
+        if (_indexToInsert != -1)
             _dicHighscores.GetValueOrDefault(sceneName).Insert(_indexToInsert, data);
+        else if (LevelManager.Instance.ListHighscores.Count <= 9)
+            _dicHighscores.GetValueOrDefault(sceneName).Add(data);
 
         LevelManager.Instance.ListHighscores = _dicHighscores.GetValueOrDefault(sceneName);
     }
 
     public bool CheckHighscore(HighscoreStruct data, string sceneName)
     {
+        _indexToInsert = -1;
         bool newHighscore = false;
+
         if (_dicHighscores.ContainsKey(sceneName))
         {
             List<HighscoreStruct> listHighscores = _dicHighscores.GetValueOrDefault(sceneName);
