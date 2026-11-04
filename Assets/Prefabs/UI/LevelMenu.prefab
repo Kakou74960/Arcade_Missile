@@ -756,6 +756,9 @@ MonoBehaviour:
   _textTime: {fileID: 7029591079034788645}
   _newHighscoreText: {fileID: 55330856239398606}
   _nicknameText: {fileID: 605293809751266491}
+  _blinkTime: 0.3
+  _blinkChar: 95
+  _letterColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &2208536940484743735
 Animator:
   serializedVersion: 7

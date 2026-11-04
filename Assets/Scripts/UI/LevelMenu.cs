@@ -23,6 +23,8 @@ public class LevelMenu : MenuBase
     [SerializeField] private TMP_Text _textTime;
     [SerializeField] private TMP_Text _newHighscoreText;
     [SerializeField] private TMP_Text _nicknameText;
+    [SerializeField] private float _blinkTime = 0.5f;
+    [SerializeField] private char _blinkChar = '_';
     [SerializeField] private Color _letterColor = Color.white;
 
     private bool _goToLevels = false;
@@ -30,6 +32,8 @@ public class LevelMenu : MenuBase
     private HighscoreStruct _currentScore = new();
     private char[] _nick = new char[3];
     private int _nickIndex = 0;
+    private float _currentBlink = 0;
+    private bool _toggleBlink = true;
 
     private void Awake()
     {
@@ -53,9 +57,10 @@ public class LevelMenu : MenuBase
             _nextButton.gameObject.SetActive(false);
         }
 
-        _nick[0] = 'A';
-        _nick[1] = 'A';
-        _nick[2] = 'A';
+        for (int c = 0; c < _nick.Length; c++)
+        {
+            _nick[c] = 'A';
+        }
 
         gameObject.SetActive(false);
     }
@@ -122,7 +127,28 @@ public class LevelMenu : MenuBase
             DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
             DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
         }
-        _nicknameText.text = _nick.ArrayToString();
+        
+        _nicknameText.text = BlinkLetter().ArrayToString();
+    }
+
+    private char[] BlinkLetter()
+    {
+        if (_currentBlink >= _blinkTime)
+        {
+            _currentBlink = 0;
+            _toggleBlink = !_toggleBlink;
+        }
+
+        char[] charToString = new char[_nick.Length];
+        for (int c = 0; c < _nick.Length; c++)
+        {
+            if (c == _nickIndex && _toggleBlink)
+                charToString[c] = _blinkChar;
+            else
+                charToString[c] = _nick[c];
+        }
+        _currentBlink += Time.deltaTime;
+        return charToString;
     }
 
     public void ShowScore()
