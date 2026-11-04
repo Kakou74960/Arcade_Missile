@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,10 +22,14 @@ public class LevelMenu : MenuBase
     [SerializeField] private TMP_Text _textMissile;
     [SerializeField] private TMP_Text _textTime;
     [SerializeField] private TMP_Text _newHighscoreText;
+    [SerializeField] private TMP_Text _nicknameText;
+    [SerializeField] private Color _letterColor = Color.white;
 
     private bool _goToLevels = false;
     private bool _goNextLevel = false;
     private HighscoreStruct _currentScore = new();
+    private char[] _nick = new char[3];
+    private int _nickIndex = 0;
 
     private void Awake()
     {
@@ -48,6 +53,10 @@ public class LevelMenu : MenuBase
             _nextButton.gameObject.SetActive(false);
         }
 
+        _nick[0] = 'A';
+        _nick[1] = 'A';
+        _nick[2] = 'A';
+
         gameObject.SetActive(false);
     }
 
@@ -61,6 +70,59 @@ public class LevelMenu : MenuBase
         {
             Camera.main.transform.position += Vector3.right * _slideStrength * 1.6f * Time.deltaTime;
         }
+
+        if (LevelManager.Instance.ChangeNickname)
+        {
+            ScoreBoardControls();
+        }
+    }
+
+    private void ScoreBoardControls()
+    {
+        if (InputManager.Instance.NextLetter.triggered)
+        {
+            _nick[_nickIndex]++;
+            if (_nick[_nickIndex] == '[')
+            {
+                _nick[_nickIndex] = '0';
+            }
+            if (_nick[_nickIndex] == ':')
+            {
+                _nick[_nickIndex] = 'A';
+            }
+        }
+        if (InputManager.Instance.PreviousLetter.triggered)
+        {
+            _nick[_nickIndex]--;
+            if (_nick[_nickIndex] == '/')
+            {
+                _nick[_nickIndex] = 'Z';
+            }
+            if (_nick[_nickIndex] == '@')
+            {
+                _nick[_nickIndex] = '9';
+            }
+        }
+        if (InputManager.Instance.SelectRight.triggered)
+        {
+            _nickIndex++;
+            if (_nickIndex >= _nick.Length)
+                _nickIndex = 0;
+        }
+        if (InputManager.Instance.SelectLeft.triggered)
+        {
+            _nickIndex--;
+            if (_nickIndex < 0)
+                _nickIndex = _nick.Length - 1;
+        }
+        if (InputManager.Instance.Submit.triggered)
+        {
+            LevelManager.Instance.ChangeNickname = false;
+            _currentScore.name = _nicknameText.text;
+            DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
+            DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
+        }
+        _nicknameText.text = _nick.ArrayToString();
     }
 
     public void ShowScore()
@@ -77,9 +139,7 @@ public class LevelMenu : MenuBase
         if (DatabaseManager.Instance.CheckHighscore(_currentScore, SceneManager.GetActiveScene().name))
         {
             NewBestHighscore();
-            DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
         }
-        DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
     }
 
     public void MainMenu()
@@ -122,6 +182,8 @@ public class LevelMenu : MenuBase
     private void NewBestHighscore()
     {
         _baseMenuAnimator.SetTrigger("NewScore");
+        LevelManager.Instance.ChangeNickname = true;
+        EventSystem.current.SetSelectedGameObject(null);
         //DatabaseManager.Instance.SaveHighscore();
     }
 }

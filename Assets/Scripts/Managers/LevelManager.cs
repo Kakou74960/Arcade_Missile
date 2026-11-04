@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : Singleton<LevelManager>, IManager
@@ -13,6 +14,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
     private float _timeSpent = 0;
     private int _objective = 0;
     private List<HighscoreStruct> _listHighscores = new();
+    private bool _changeNickname;
 
     #region Properties
     public bool LevelFinished
@@ -55,6 +57,18 @@ public class LevelManager : Singleton<LevelManager>, IManager
     {
         get => _listHighscores;
         set => _listHighscores = value;
+    }
+    public bool ChangeNickname
+    {
+        get => _changeNickname;
+        set
+        {
+            _changeNickname = value;
+            if (!_changeNickname)
+            {
+                EventSystem.current.SetSelectedGameObject(LevelMenu.DefaultSelected);
+            }
+        }
     }
     #endregion Properties
 
