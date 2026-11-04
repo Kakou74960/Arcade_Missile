@@ -134,7 +134,8 @@ public class LevelMenu : MenuBase
 
         float minutes = LevelManager.Instance.TimeSpent / 60;
         float seconds = LevelManager.Instance.TimeSpent % 60;
-        _textTime.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        float milliseconds = LevelManager.Instance.TimeSpent - ((int)LevelManager.Instance.TimeSpent);
+        _textTime.text = string.Format("{0:00}:{1:00}{2:.000}", minutes, seconds, milliseconds);
 
         if (DatabaseManager.Instance.CheckHighscore(_currentScore, SceneManager.GetActiveScene().name))
         {
