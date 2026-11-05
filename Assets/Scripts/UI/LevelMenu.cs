@@ -126,6 +126,7 @@ public class LevelMenu : MenuBase
             _currentScore.name = _nick.ArrayToString();
             DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
             DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
+            _baseMenuAnimator.SetTrigger("Boutons");
         }
         
         _nicknameText.text = BlinkLetter().ArrayToString();
@@ -167,6 +168,8 @@ public class LevelMenu : MenuBase
         {
             NewBestHighscore();
         }
+        else
+            _baseMenuAnimator.SetTrigger("Boutons");
     }
 
     public void MainMenu()

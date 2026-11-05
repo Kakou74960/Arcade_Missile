@@ -64,10 +64,10 @@ public class LevelManager : Singleton<LevelManager>, IManager
         set
         {
             _changeNickname = value;
-            if (!_changeNickname)
+            /*if (!_changeNickname)
             {
                 EventSystem.current.SetSelectedGameObject(LevelMenu.DefaultSelected);
-            }
+            }*/
         }
     }
     #endregion Properties

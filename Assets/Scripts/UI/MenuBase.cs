@@ -35,14 +35,7 @@ public class MenuBase : MonoBehaviour
         /// Si on perd la sélection
         if (EventSystem.current.currentSelectedGameObject == null)
             EventSystem.current.SetSelectedGameObject(_defaultSelected);
-    }
-
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            EventSystem.current.SetSelectedGameObject(_defaultSelected);
-        }
+        
     }
 
     public void TransitionSlide(Direction Slidedirection, bool slideOut)
