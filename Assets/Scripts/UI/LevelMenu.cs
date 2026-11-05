@@ -25,7 +25,6 @@ public class LevelMenu : MenuBase
     [SerializeField] private TMP_Text _nicknameText;
     [SerializeField] private float _blinkTime = 0.5f;
     [SerializeField] private char _blinkChar = '_';
-    [SerializeField] private Color _letterColor = Color.white;
 
     private bool _goToLevels = false;
     private bool _goNextLevel = false;
@@ -124,7 +123,7 @@ public class LevelMenu : MenuBase
         if (InputManager.Instance.Submit.triggered)
         {
             LevelManager.Instance.ChangeNickname = false;
-            _currentScore.name = _nicknameText.text;
+            _currentScore.name = _nick.ArrayToString();
             DatabaseManager.Instance.SaveHighscore(_currentScore, SceneManager.GetActiveScene().name);
             DatabaseManager.Instance.SaveHighscoresFiles(LevelManager.Instance.ListHighscores, SceneManager.GetActiveScene().name);
         }
@@ -143,7 +142,7 @@ public class LevelMenu : MenuBase
         char[] charToString = new char[_nick.Length];
         for (int c = 0; c < _nick.Length; c++)
         {
-            if (c == _nickIndex && _toggleBlink)
+            if (c == _nickIndex && _toggleBlink && LevelManager.Instance.ChangeNickname)
                 charToString[c] = _blinkChar;
             else
                 charToString[c] = _nick[c];

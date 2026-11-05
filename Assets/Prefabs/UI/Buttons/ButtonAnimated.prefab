@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 4681204762354021835}
   - component: {fileID: 5050059902225121248}
   - component: {fileID: 4412365096935701931}
+  - component: {fileID: 6743348432542766932}
   m_Layer: 5
   m_Name: ButtonAnimated
   m_TagString: Untagged
@@ -476,6 +477,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &6743348432542766932
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783563844085456434}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7505889636181219079
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +581,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.65
+  m_fontSize: 35.8
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

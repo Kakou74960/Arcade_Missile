@@ -97,4 +97,9 @@ public class MenuBase : MonoBehaviour
     {
         AudioManager.Instance.PlaySFXOneShot(_pressedSound);
     }
+
+    public void SetDefaultSelected()
+    {
+        EventSystem.current.SetSelectedGameObject(_defaultSelected);
+    }
 }
