@@ -125,13 +125,19 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
             // Compare si le Highscore est dans le top 10
             foreach (HighscoreStruct highscore in listHighscores)
             {
-                if (data.rocket <= highscore.rocket)
+                if (data.rocket <  highscore.rocket)
+                {
+                    _indexToInsert = listHighscores.IndexOf(highscore);
+                    newHighscore = true;
+                    break;
+                }
+                else if (data.rocket == highscore.rocket)
                 {
                     if (data.time < highscore.time)
                     {
                         _indexToInsert = listHighscores.IndexOf(highscore);
-                        //listHighscores.Insert(_indexToInsert, data);
                         newHighscore = true;
+                        break;
                         // Ajouter un feedback de nouveau Highscore
                     }
                 }
