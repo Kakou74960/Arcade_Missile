@@ -125,7 +125,7 @@ MonoBehaviour:
   _pressedSound: Pressed_Button
   _musicMainMenu: Main_Menu_Music
   _levelSelectionMenu: {fileID: 0}
-  _selectedInLevelSelection: {fileID: 0}
+  _playLevel: Level 1
 --- !u!95 &6428455844234494032
 Animator:
   serializedVersion: 7

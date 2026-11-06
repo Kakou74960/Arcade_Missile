@@ -1264,7 +1264,7 @@
                     "path": "<Joystick>/stick/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Joystick;Gamepad",
+                    "groups": ";Joystick",
                     "action": "Next",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1282,11 +1282,22 @@
                 },
                 {
                     "name": "",
+                    "id": "0a250a10-7a6c-4c53-88e0-8b89df402f43",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2fc91799-64c6-4318-975e-5d0a9a9748fa",
                     "path": "<Joystick>/stick/down",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Joystick;Gamepad",
+                    "groups": ";Joystick",
                     "action": "Previous",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1304,11 +1315,22 @@
                 },
                 {
                     "name": "",
+                    "id": "cfaea976-afe5-4568-86b8-4a9fa6b8bba1",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Previous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "150f1e88-93ef-4634-b776-e8fae86c0a85",
                     "path": "<Joystick>/stick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Joystick;Gamepad",
+                    "groups": ";Joystick",
                     "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1326,11 +1348,22 @@
                 },
                 {
                     "name": "",
+                    "id": "5e0668d7-7160-4566-90a2-a1c4839e4ecd",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fa6cb138-2540-4349-bcf6-3d020bb4d113",
                     "path": "<Joystick>/stick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Joystick;Gamepad",
+                    "groups": ";Joystick",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -1342,6 +1375,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33866c02-d6f4-4771-867c-578305ebdffa",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false

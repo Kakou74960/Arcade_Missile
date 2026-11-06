@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,8 +7,8 @@ public class MainMenu : MenuBase
 {
     [Header("Main Menu Settings")]
     [SerializeField] private string _musicMainMenu;
-
     [SerializeField] private LevelSelectionMenu _levelSelectionMenu;
+    [SerializeField] private string _playLevel = "Level 1";
 
     private void Awake()
     {
@@ -24,14 +22,17 @@ public class MainMenu : MenuBase
     }
     private void Update()
     {
-
+        /*if (Application.isEditor && )
+        {
+            SceneManager.LoadScene("Game");
+        }*/
     }
 
     public void Play()
     {
         //AudioManager.Instance.PlaySFXOneShot("CLICK");
         TransitionSlide(Direction.UP, true);
-        StartCoroutine(LoadScene("Game"));
+        StartCoroutine(LoadScene(_playLevel));
     }
 
     public void LevelSelectionMenu()
