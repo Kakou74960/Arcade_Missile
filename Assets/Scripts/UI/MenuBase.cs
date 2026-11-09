@@ -81,6 +81,14 @@ public class MenuBase : MonoBehaviour
         newMenu.TransitionSlide(dir, SlideOut);
     }
 
+    protected IEnumerator MenuTransition(MenuBase newMenu, Direction dir, bool SlideOut, GameObject newSelected)
+    {
+        yield return new WaitForSeconds(_transitionDelay);
+        newMenu.gameObject.SetActive(true);
+        newMenu.TransitionSlide(dir, SlideOut);
+        EventSystem.current.SetSelectedGameObject(newSelected);
+    }
+
     public void OnSelected()
     {
         AudioManager.Instance.PlaySFXOneShot(_selectedSound);

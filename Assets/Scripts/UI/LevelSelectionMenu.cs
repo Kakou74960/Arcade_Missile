@@ -55,6 +55,8 @@ public class LevelSelectionMenu : MenuBase
 
         if (_selectedButton != null)
             CenterElement(_selectedButton.GetComponent<RectTransform>());
+        else
+            CenterElement(_defaultSelected.GetComponent<RectTransform>());
     }
 
     private void CenterElement(RectTransform elementTransform)
@@ -62,7 +64,7 @@ public class LevelSelectionMenu : MenuBase
         if (elementTransform != null)
         {
             Vector3 relativeCenter = Vector3.zero;
-            relativeCenter.x = _layoutTransform.sizeDelta.x/2 - elementTransform.anchoredPosition.x;
+            relativeCenter.x = _layoutTransform.sizeDelta.x / 2 - elementTransform.anchoredPosition.x;
             relativeCenter.y = _layoutTransform.anchoredPosition.y;
             _layoutTransform.anchoredPosition = Vector3.Lerp(_layoutTransform.anchoredPosition, relativeCenter, _scrollStrength);
         }
@@ -77,10 +79,11 @@ public class LevelSelectionMenu : MenuBase
 
     public void ReturnMainMenu()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         TransitionSlide(Direction.RIGHT, true);
-        StartCoroutine(MenuTransition(_mainMenu, Direction.LEFT, false));
+        StartCoroutine(MenuTransition(_mainMenu, Direction.LEFT, false, UiManager.Instance.MainMenu.DefaultSelected));
 
-        EventSystem.current.SetSelectedGameObject(UiManager.Instance.MainMenu.DefaultSelected);
+        //EventSystem.current.SetSelectedGameObject(UiManager.Instance.MainMenu.DefaultSelected);
         //this.gameObject.SetActive(false);
     }
 }
