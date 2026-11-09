@@ -14,7 +14,6 @@ public class LevelSelectionMenu : MenuBase
 
     [SerializeField] private Button[] _levelButtons;
     [SerializeField] private string _overviewName;
-    [SerializeField] private Animator[] _levelOverviews;
     [Header("Scroll Settings")]
     [SerializeField] private RectTransform _layoutTransform;
     [SerializeField] private float _scrollStrength = 0.5f;
