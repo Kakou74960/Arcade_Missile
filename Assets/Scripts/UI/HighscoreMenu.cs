@@ -29,7 +29,7 @@ public class HighscoreMenu : MenuBase
 
     public void UpdateScoreBoard()
     {
-        for (int scoreIndex = 0; scoreIndex < LevelManager.Instance.ListHighscores.Count; scoreIndex++)
+        for (int scoreIndex = 0; scoreIndex < _scores.Length; scoreIndex++)
         {
             _scores[scoreIndex]._nameText.text = LevelManager.Instance.ListHighscores[scoreIndex].name;
             _scores[scoreIndex]._rocketText.text = LevelManager.Instance.ListHighscores[scoreIndex].rocket.ToString();
