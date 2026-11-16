@@ -3,8 +3,10 @@ using UnityEngine;
 public class UiManager : Singleton<UiManager>, IManager
 {
     #region Fields
+    private TitleMenu _titleMenu;
     private MainMenu _mainMenu;
     private LevelSelectionMenu _levelSelectionMenu;
+    private bool _onTitleMenu = true;
     private bool _loadToMainMenu = false;
     private bool _loadToLevelSelection = false;
     #endregion Fields
@@ -16,10 +18,13 @@ public class UiManager : Singleton<UiManager>, IManager
         set
         {
             _mainMenu = value;
-            if (LoadToLevelSelection)
-                _mainMenu.gameObject.SetActive(false);
-            else if (LoadToMainMenu)
+            if (LoadToMainMenu)
+            {
                 _mainMenu.TransitionSlide(MenuBase.Direction.UP, false);
+                _titleMenu.gameObject.SetActive(false);
+            }
+            else
+                _mainMenu.gameObject.SetActive(false);
         }
     }
 
@@ -33,10 +38,17 @@ public class UiManager : Singleton<UiManager>, IManager
             {
                 _levelSelectionMenu.gameObject.SetActive(true);
                 _levelSelectionMenu.TransitionSlide(MenuBase.Direction.UP, false);
+                _titleMenu.gameObject.SetActive(false);
             }
             else
                 _levelSelectionMenu.gameObject.SetActive(false);
         }
+    }
+
+    public TitleMenu TitleMenu
+    {
+        get { return _titleMenu; }
+        set { _titleMenu = value; }
     }
 
     public bool LoadToMainMenu
@@ -48,6 +60,7 @@ public class UiManager : Singleton<UiManager>, IManager
             _loadToMainMenu = value;
         }
     }
+
     public bool LoadToLevelSelection
     { 
         get => _loadToLevelSelection;
@@ -56,6 +69,12 @@ public class UiManager : Singleton<UiManager>, IManager
             ResetLoadTo();
             _loadToLevelSelection = value;
         }
+    }
+
+    public bool OnTitleMenu
+    {
+        get => _onTitleMenu;
+        set {_onTitleMenu = value;}
     }
     #endregion Properties
 

@@ -10,13 +10,10 @@ public class MainMenu : MenuBase
     [SerializeField] private LevelSelectionMenu _levelSelectionMenu;
     [SerializeField] private string _playLevel = "Level 1";
 
-    private void Awake()
-    {
-        UiManager.Instance.MainMenu = this;
-    }
-
     private void Start()
     {
+
+        UiManager.Instance.MainMenu = this;
         AudioManager.Instance.PlayMusic(_musicMainMenu);
         //DontDestroyOnLoad(this);
     }

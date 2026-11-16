@@ -110,6 +110,11 @@ public class DatabaseManager : Singleton<DatabaseManager>, IManager
         else if (LevelManager.Instance.ListHighscores.Count <= 9)
             _dicHighscores.GetValueOrDefault(sceneName).Add(data);
 
+        if (_dicHighscores.GetValueOrDefault(sceneName).Count > 10)
+        {
+            _dicHighscores.GetValueOrDefault(sceneName).RemoveAt(10);
+        }
+
         LevelManager.Instance.ListHighscores = _dicHighscores.GetValueOrDefault(sceneName);
     }
 

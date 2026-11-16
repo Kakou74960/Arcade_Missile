@@ -20,13 +20,9 @@ public class LevelSelectionMenu : MenuBase
 
     private GameObject _selectedButton;
 
-    private void Awake()
-    {
-        UiManager.Instance.LevelSelectionMenu = this;
-    }
-
     private void Start()
     {
+        UiManager.Instance.LevelSelectionMenu = this;
         EventSystem.current.SetSelectedGameObject(_defaultSelected);
         //AudioManager.Instance.PlayMusic("MAIN_MENU_MUSIC");
     }

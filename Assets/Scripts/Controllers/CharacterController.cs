@@ -284,6 +284,7 @@ public class CharacterController : MonoBehaviour
     {
         if(!_die)
         {
+            InputManager.Instance.Autodestruct.performed -= ctx => Die();
             DetachParticles();
             Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
