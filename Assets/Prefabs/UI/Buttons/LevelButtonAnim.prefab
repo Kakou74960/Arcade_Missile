@@ -235,7 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6429294203677397571}
   - component: {fileID: 4447732703608281663}
-  - component: {fileID: 2703988221773703354}
+  - component: {fileID: 836369923864467289}
   m_Layer: 5
   m_Name: Overview
   m_TagString: Untagged
@@ -289,7 +289,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2703988221773703354
+--- !u!114 &836369923864467289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,21 +298,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3805031789822730923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1836ca9acdb68da4997f5de84f234aee, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ffa88df460250543bb055a98d8f826e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UpdateScores
-  _levelName: 'Level '
-  _scores:
-  - {fileID: 2835065936989763031}
-  - {fileID: 8317301915159395276}
-  - {fileID: 4883712536138029725}
-  - {fileID: 5662728038283431330}
-  - {fileID: 447008391079909440}
-  - {fileID: 139046340125662453}
-  - {fileID: 605033934457953348}
-  - {fileID: 3263425687272667432}
-  - {fileID: 869837838961862552}
-  - {fileID: 5322402503311435095}
+  m_EditorClassIdentifier: Assembly-CSharp::OverviewLogiq
+  _overviewAnim: {fileID: 4447732703608281663}
+  _animSpeed: 0.5
 --- !u!1 &4062495358052985391
 GameObject:
   m_ObjectHideFlags: 0
