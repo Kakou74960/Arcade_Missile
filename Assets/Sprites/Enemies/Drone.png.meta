@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 481ff0e9811869a4e90b408cb71bd189
+guid: 201bf25e7d18898449bc11d9a479b177
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4112356383579328530
-    second: Drone_0
+      213: -6152464238738052565
+    second: Drone 1_0
   - first:
-      213: -9122016740902801177
-    second: Drone_1
+      213: 7904216385649396187
+    second: Drone 1_1
   - first:
-      213: -7695309289240506667
-    second: Drone_2
+      213: 7826212226073059267
+    second: Drone 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,8 +123,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2105e09b756021930800000000000000
-      internalID: 4112356383579328530
+      spriteID: b2a69bc3f5e0e9aa0800000000000000
+      internalID: -6152464238738052565
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
         x: 6
         y: 59
         width: 21
-        height: 17
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e0725bca16186180800000000000000
-      internalID: -9122016740902801177
+      spriteID: bd94476acea61bd60800000000000000
+      internalID: 7904216385649396187
       vertices: []
       indices: 
       edges: []
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5de4e0219f4c43590800000000000000
-      internalID: -7695309289240506667
+      spriteID: 3cf57e7fd8a4c9c60800000000000000
+      internalID: 7826212226073059267
       vertices: []
       indices: 
       edges: []
@@ -177,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f1499f6bdb5ce18419b2b01ec00738ba
+    spriteID: a4d09b8fb19d6f04a881971bdc6b1010
     internalID: 0
     vertices: []
     indices: 
@@ -187,9 +187,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Drone_0: 4112356383579328530
-      Drone_1: -9122016740902801177
-      Drone_2: -7695309289240506667
+      Drone_0: -6152464238738052565
+      Drone_1: 7904216385649396187
+      Drone_2: 7826212226073059267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
