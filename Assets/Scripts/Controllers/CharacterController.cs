@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
@@ -53,6 +54,8 @@ public class CharacterController : MonoBehaviour
     private bool _forcedBrake;
     private bool _inverted;
     private bool _die = false;
+
+    private List<Collider2D> _walls = new List<Collider2D>();
     #endregion Fields
 
     #region Properties
@@ -200,11 +203,21 @@ public class CharacterController : MonoBehaviour
             Die();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            _walls.Add(collision);
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            PhasorState = false;
+            _walls.Remove(collision);
+            if (_walls.Count == 0)
+                PhasorState = false;
         }
     }
 
