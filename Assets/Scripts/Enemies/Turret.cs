@@ -6,6 +6,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private Transform _elementToTurnToTarget;
     //[SerializeField] private Transform _target;
     [SerializeField] private LineRenderer _lineLock;
+    [SerializeField] private SpriteRenderer[] _spriteToColor;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private float _lockTime = 3;
     [SerializeField] private Color _startLockColor;
@@ -24,6 +25,11 @@ public class Turret : MonoBehaviour
     {
         if (CharacterManager.Instance.CharacterController != null)
             CheckIfMissileVisible();
+        else
+        {
+            _currentLockTime = 0;
+            _lineLock.enabled = false;
+        }
         //_elementToTurnToTarget.transform.rotation = Quaternion.FromToRotation(gameObject.transform.position, CharacterManager.Instance.CharacterController.transform.position);
 
         if(_currentLockTime >= _lockTime)
@@ -66,5 +72,10 @@ public class Turret : MonoBehaviour
         }
         else
             _lineLock.enabled = false;
+
+        foreach (SpriteRenderer sprite in _spriteToColor)
+        {
+            sprite.color = lineColor;
+        }
     }
 }
