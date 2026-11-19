@@ -37,7 +37,7 @@ public class ElectricPanel : MonoBehaviour
     {
         CharacterController missile = CharacterManager.Instance.CharacterController;
 
-        if (collision.gameObject == missile.gameObject && missile.ElectrifiedState)
+        if (collision.gameObject == missile.gameObject && missile.ElectrifiedState && !missile.PhasorState)
         {
             Activated = true;
             missile.ElectrifiedState = false;

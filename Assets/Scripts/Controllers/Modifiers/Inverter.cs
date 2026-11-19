@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Inverter : MonoBehaviour
 {
-    [SerializeField] private string _invertedSound = "Inverted";
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<CharacterController>())
+        CharacterController missile = CharacterManager.Instance.CharacterController;
+
+        if (collision.gameObject == missile.gameObject && !missile.PhasorState)
         {
-            CharacterManager.Instance.CharacterController.Inverted = true;
-            AudioManager.Instance.PlaySFXOneShot(_invertedSound);
+            missile.Inverted = true;
         }
     }
 }

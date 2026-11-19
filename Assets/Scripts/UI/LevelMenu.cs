@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class LevelMenu : MenuBase
 {
     [Header("Level Menu Settings")]
+    [SerializeField] protected string _musicToPlay = "Level_Music";
     [SerializeField] private float _slideStrength = 1;
     [Header("Main Menu Button")]
     [SerializeField] private Button _mainMenuButton;
@@ -41,7 +42,11 @@ public class LevelMenu : MenuBase
 
     private void Start()
     {
-        if(_mainMenuName == string.Empty)
+
+        if (_musicToPlay != string.Empty)
+            AudioManager.Instance.PlayMusic(_musicToPlay);
+
+        if (_mainMenuName == string.Empty)
         {
             _mainMenuButton.gameObject.SetActive(false);
         }

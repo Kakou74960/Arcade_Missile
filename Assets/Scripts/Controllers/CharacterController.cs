@@ -10,8 +10,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Collider2D _collider;
     [SerializeField] private GameObject _explosion;
     [SerializeField] private Color _forcedBoostColor;
+    [SerializeField] private string _acceleratorSound = "Accelerator";
     [SerializeField] private Color _forcedBrakeColor;
-    [SerializeField] private Color _invertedColor;
+    [SerializeField] private string _deceleratorSound = "Decelerator";
     [SerializeField] private AudioSource _flySource;
     [SerializeField] private string _soundFlying;
 
@@ -19,9 +20,17 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Animator _missileAnimator;
 
+    [Header("Inverted State")]
+    [SerializeField] private Color _invertedColor;
+    [SerializeField] private string _invertedSound = "Inverted";
+
     [Header("Phased State")]
     [SerializeField] private SpriteRenderer _changeSpriteRenderer;
     [SerializeField] private Animator _invertedMissileAnim;
+    [SerializeField] private string _phasorSound = "Phasing";
+
+    [Header("Electrified State")]
+    [SerializeField] private string _electricSound = "Electricity";
 
     [Header("Controls Settings")]
     [SerializeField] private ParticleSystem _highSpeedParticle;
@@ -59,6 +68,7 @@ public class CharacterController : MonoBehaviour
                 {
                     _collider.isTrigger = true;
                     _missileAnimator.SetBool("Phased", true);
+                    AudioManager.Instance.PlaySFXOneShot(_phasorSound);
                 }
                 else
                 {
@@ -74,11 +84,15 @@ public class CharacterController : MonoBehaviour
         get => _forcedBoost;
         set
         {
-            _forcedBoost = value;
-            if (_forcedBoost)
+            if (value != _forcedBoost)
             {
-                _spriteRenderer.color = _forcedBoostColor;
-                _changeSpriteRenderer.color = _forcedBoostColor;
+                _forcedBoost = value;
+                if (_forcedBoost)
+                {
+                    _spriteRenderer.color = _forcedBoostColor;
+                    _changeSpriteRenderer.color = _forcedBoostColor;
+                    AudioManager.Instance.PlaySFXOneShot(_acceleratorSound);
+                }
             }
         }
     }
@@ -88,11 +102,15 @@ public class CharacterController : MonoBehaviour
         get => _forcedBrake;
         set
         {
-            _forcedBrake = value;
-            if (_forcedBrake)
+            if (value != _forcedBrake)
             {
-                _spriteRenderer.color = _forcedBrakeColor;
-                _changeSpriteRenderer.color = _forcedBrakeColor;
+                _forcedBrake = value;
+                if (_forcedBrake)
+                {
+                    _spriteRenderer.color = _forcedBrakeColor;
+                    _changeSpriteRenderer.color = _forcedBrakeColor;
+                    AudioManager.Instance.PlaySFXOneShot(_deceleratorSound);
+                }
             }
         }
     }
@@ -102,11 +120,15 @@ public class CharacterController : MonoBehaviour
         get => _inverted;
         set
         {
-            _inverted = value;
-            if (_inverted)
+            if (value != _inverted)
             {
-                _spriteRenderer.color = _invertedColor;
-                _changeSpriteRenderer.color = _invertedColor;
+                _inverted = value;
+                if (_inverted)
+                {
+                    _spriteRenderer.color = _invertedColor;
+                    _changeSpriteRenderer.color = _invertedColor;
+                    AudioManager.Instance.PlaySFXOneShot(_invertedSound);
+                }
             }
         }
     }
@@ -116,16 +138,20 @@ public class CharacterController : MonoBehaviour
         get => _electrifiedState;
         set
         {
-            _electrifiedState = value;
-            if (_electrifiedState)
+            if (value != _electrifiedState)
             {
-                _missileAnimator.SetBool("Electrified", true);
-                _invertedMissileAnim.SetBool("Electrified", true);
-            }
-            else
-            {
-                _missileAnimator.SetBool("Electrified", false);
-                _invertedMissileAnim.SetBool("Electrified", false);
+                _electrifiedState = value;
+                if (_electrifiedState)
+                {
+                    _missileAnimator.SetBool("Electrified", true);
+                    _invertedMissileAnim.SetBool("Electrified", true);
+                    AudioManager.Instance.PlaySFXOneShot(_electricSound);
+                }
+                else
+                {
+                    _missileAnimator.SetBool("Electrified", false);
+                    _invertedMissileAnim.SetBool("Electrified", false);
+                }
             }
         }
     }

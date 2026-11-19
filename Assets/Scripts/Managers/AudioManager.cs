@@ -22,9 +22,12 @@ public class AudioManager : Singleton<AudioManager>, IManager
     public void PlayMusic(string iD)
     {
         SoundData music = DatabaseManager.Instance.GetMusicByID(iD);
-        _musicSource.Stop();
-        _musicSource.clip = music.AudioClip;
-        _musicSource.volume = music.Volume;
-        _musicSource.Play();
+        if (_musicSource.clip != music.AudioClip)
+        {
+            _musicSource.Stop();
+            _musicSource.clip = music.AudioClip;
+            _musicSource.volume = music.Volume;
+            _musicSource.Play();
+        }
     }
 }

@@ -20,10 +20,13 @@ public class Wind : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.attachedRigidbody)
+        CharacterController missile = CharacterManager.Instance.CharacterController;
+        if (collision.attachedRigidbody && collision.gameObject == !missile.gameObject)
         {
             _objectsAffectedByWind.Add(collision);
         }
+        else if (collision.gameObject == missile.gameObject && !missile.PhasorState)
+            _objectsAffectedByWind.Add(collision);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

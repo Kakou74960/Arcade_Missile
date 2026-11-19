@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Electricity : MonoBehaviour
 {
-    [SerializeField] private string _electricSound = "Electricity";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,10 +18,9 @@ public class Electricity : MonoBehaviour
     {
         CharacterController missile = CharacterManager.Instance.CharacterController;
 
-        if (collision.gameObject == missile.gameObject)
+        if (collision.gameObject == missile.gameObject && !missile.PhasorState)
         {
             missile.ElectrifiedState = true;
-            AudioManager.Instance.PlaySFXOneShot(_electricSound);
         }
     }
 }

@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class Phasor : MonoBehaviour
 {
-    [SerializeField] private string _phasorSound = "Phasing";
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<CharacterController>())
+        CharacterController missile = CharacterManager.Instance.CharacterController;
+
+        if (collision.gameObject == missile.gameObject && !missile.PhasorState)
         {
-            CharacterManager.Instance.CharacterController.PhasorState = true;
-            AudioManager.Instance.PlaySFXOneShot(_phasorSound);
+            missile.PhasorState = true;
         }
     }
 }
