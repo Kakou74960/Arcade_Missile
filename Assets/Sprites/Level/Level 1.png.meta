@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fbed0090e9f810e4d97099cfc3a087dc
+guid: eb62040dbd8deea46a9e64def4930152
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -776605004327541868
-    second: "Capture d'\xE9cran 2026-11-09 172829_0"
+      213: 4466468851715550486
+    second: Level 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Capture d'\xE9cran 2026-11-09 172829_0"
+      name: Level 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1460
-        height: 818
+        width: 1411
+        height: 790
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 493244afcd1f835f0800000000000000
-      internalID: -776605004327541868
+      spriteID: 61d2ada91c51cfd30800000000000000
+      internalID: 4466468851715550486
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Capture d'\xE9cran 2026-11-09 172829_0": -776605004327541868
+      Level 1_0: 4466468851715550486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
