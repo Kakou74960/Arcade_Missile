@@ -16,6 +16,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private string _deceleratorSound = "Decelerator";
     [SerializeField] private AudioSource _flySource;
     [SerializeField] private string _soundFlying;
+    [SerializeField] private string _soundFastFlying;
+    [SerializeField] private string _soundSlowFlying;
 
     [Header("Normal State")]
     [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -165,8 +167,6 @@ public class CharacterController : MonoBehaviour
     {
         InputManager.Instance.Autodestruct.performed += ctx => Die();
         CharacterManager.Instance.CharacterController = this;
-        _flySource.clip = DatabaseManager.Instance.GetSFXByID(_soundFlying).AudioClip;
-        _flySource.Play();
     }
 
 
@@ -271,13 +271,14 @@ public class CharacterController : MonoBehaviour
         Debug.Log("Missile speed : " + targetSpeed);
 
         //Change le calcul si dans l'editeur ou non
-            _rb.AddForce(_rb.transform.up * targetSpeed * Time.deltaTime);
+            _rb.AddForce(_rb.transform.up * targetSpeed);
     }
 
     private float HighSpeed()
     {
         _rb.linearDamping = _highDampening;
         StopSpeedParticles();
+        PlayRocketSound(_soundFastFlying);
         _highSpeedParticle.gameObject.SetActive(true);
         _highSpeedParticle.Play();
         return _highSpeed;
@@ -287,6 +288,7 @@ public class CharacterController : MonoBehaviour
     {
         _rb.linearDamping = _mediumDampening;
         StopSpeedParticles();
+        PlayRocketSound(_soundFlying);
         _mediumSpeedParticle.gameObject.SetActive(true);
         _mediumSpeedParticle.Play();
         return _mediumSpeed;
@@ -296,6 +298,7 @@ public class CharacterController : MonoBehaviour
     {
         _rb.linearDamping = _slowDampening;
         StopSpeedParticles();
+        PlayRocketSound(_soundSlowFlying);
         _lowSpeedParticle.gameObject.SetActive(true);
         _lowSpeedParticle.Play();
         return _slowSpeed;
@@ -317,6 +320,16 @@ public class CharacterController : MonoBehaviour
         _mediumSpeedParticle.transform.parent = null;
         _lowSpeedParticle.transform.parent = null;
         _smokeParticle.transform.parent = null;
+    }
+
+    private void PlayRocketSound(string id)
+    {
+        if (_flySource.clip != DatabaseManager.Instance.GetSFXByID(id).AudioClip)
+        {
+            _flySource.clip = DatabaseManager.Instance.GetSFXByID(id).AudioClip;
+            _flySource.volume = DatabaseManager.Instance.GetSFXByID(id).Volume;
+            _flySource.Play();
+        }
     }
 
     public void Die()

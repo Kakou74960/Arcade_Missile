@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: FlyingMissileSound
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   _iD: Flying_Missile
-  _audioClip: {fileID: 8300000, guid: 1c33171cb02d78d4381790a63d316f73, type: 3}
-  _volume: 1
+  _audioClip: {fileID: 8300000, guid: 761f2e33f053c544c96c38036987f196, type: 3}
+  _volume: 0.6
