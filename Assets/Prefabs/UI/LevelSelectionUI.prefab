@@ -2248,7 +2248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 7
+      value: Niveau 7
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -4606,7 +4606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 9
+      value: Niveau 9
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -6964,7 +6964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 12
+      value: Niveau 12
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -9322,7 +9322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 6
+      value: Niveau 6
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -11680,7 +11680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 5
+      value: Niveau 5
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -14034,7 +14034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 13
+      value: Niveau 13
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -14444,9 +14444,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: 'Return To
+      value: 'Retour Au
 
-        Main Menu'
+        Menu Principal'
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
@@ -16603,7 +16603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 8
+      value: Niveau 8
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -18961,7 +18961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 10
+      value: Niveau 10
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -21319,7 +21319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 11
+      value: Niveau 11
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -23685,7 +23685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 1
+      value: Niveau 1
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -26027,7 +26027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 3
+      value: Niveau 3
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -28385,7 +28385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 2
+      value: Niveau 2
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize
@@ -30743,7 +30743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_text
-      value: Level 4
+      value: Niveau 4
       objectReference: {fileID: 0}
     - target: {fileID: 7276893753232485737, guid: 73500ca7e1fc63846accbe00795038da, type: 3}
       propertyPath: m_fontSize

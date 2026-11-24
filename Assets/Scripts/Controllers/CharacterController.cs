@@ -132,8 +132,9 @@ public class CharacterController : MonoBehaviour
                 {
                     _spriteRenderer.color = _invertedColor;
                     _changeSpriteRenderer.color = _invertedColor;
-                    AudioManager.Instance.PlaySFXOneShot(_invertedSound);
+                    //AudioManager.Instance.PlaySFXOneShot(_invertedSound);
                 }
+                AudioManager.Instance.ReverseMusic(_inverted);
             }
         }
     }
@@ -339,8 +340,10 @@ public class CharacterController : MonoBehaviour
             InputManager.Instance.Autodestruct.performed -= ctx => Die();
             DetachParticles();
             Instantiate(_explosion, gameObject.transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            LevelManager.Instance.CurrentCamera.Shake();
+            AudioManager.Instance.ReverseMusic(false);
             _die = true;
+            Destroy(gameObject);
         }
     }
 }

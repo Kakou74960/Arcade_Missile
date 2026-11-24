@@ -350,7 +350,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Quit
+      value: Quitter
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
@@ -510,6 +510,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 326008383431094321}
     m_Modifications:
+    - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
+      propertyPath: m_text
+      value: JOUER
+      objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
       value: 24
@@ -672,11 +676,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Level Selection
+      value: "S\xE9lection de Niveau"
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 21.15
+      value: 16.55
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontStyle

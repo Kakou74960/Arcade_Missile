@@ -8,6 +8,7 @@ public class LevelManager : Singleton<LevelManager>, IManager
 {
     [SerializeField] private bool _levelFinished = false;
 
+    private ShakeCamera _currentCamera;
     private LevelMenu _levelMenu;
     private HighscoreMenu _highscoreMenu;
     private int _missileUsed = 0;
@@ -70,6 +71,8 @@ public class LevelManager : Singleton<LevelManager>, IManager
             }*/
         }
     }
+
+    public ShakeCamera CurrentCamera { get => _currentCamera; set => _currentCamera = value; }
     #endregion Properties
 
     private void Update()

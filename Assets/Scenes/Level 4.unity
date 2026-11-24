@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1068921354934315448, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 1224396476398162069, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_AnchorMax.y
@@ -381,15 +381,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4750698384342291520, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_fontSize
-      value: 23.05
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5644990284785163953, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_fontSize
-      value: 22.15
+      value: 16.35
       objectReference: {fileID: 0}
     - target: {fileID: 5701705565183593781, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 23.7
       objectReference: {fileID: 0}
     - target: {fileID: 5801918399543069424, guid: 157a382d65f368f478596da8092202df, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5639,6 +5639,7 @@ GameObject:
   - component: {fileID: 1317868898}
   - component: {fileID: 1317868897}
   - component: {fileID: 1317868900}
+  - component: {fileID: 1317868901}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5764,6 +5765,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1317868901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317868896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ed2ca5c51ffe04daa31cea99bc1b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShakeCamera
+  _camera: {fileID: 0}
+  _offset: {x: 0, y: 0, z: -10}
+  _shakeStrength: 1
+  _loseShakeSpeed: 2
 --- !u!1001 &1504638537
 PrefabInstance:
   m_ObjectHideFlags: 0

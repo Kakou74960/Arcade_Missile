@@ -30,4 +30,14 @@ public class AudioManager : Singleton<AudioManager>, IManager
             _musicSource.Play();
         }
     }
+
+    public void ReverseMusic(bool reverse)
+    {
+        if (reverse)
+        {
+            _musicSource.pitch = -1;
+        }
+        else
+            _musicSource.pitch = 1;
+    }
 }

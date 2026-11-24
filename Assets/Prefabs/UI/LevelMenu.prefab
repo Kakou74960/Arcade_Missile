@@ -862,7 +862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Highscore
+  m_text: Nouveau record
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cee7c00949304043aa8b3cd21721774, type: 2}
   m_sharedMaterial: {fileID: 7905750658712092966, guid: 9cee7c00949304043aa8b3cd21721774, type: 2}
@@ -1311,11 +1311,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Main Menu
+      value: Retour au Menu Principal
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 4412365096935701931, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1505,11 +1505,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Retry
+      value: Recommencer
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 25.3
       objectReference: {fileID: 0}
     - target: {fileID: 4412365096935701931, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1686,11 +1686,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Level Selection
+      value: "S\xE9lection de Niveau"
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 23.05
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4412365096935701931, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1856,11 +1856,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Next Level
+      value: Niveau suivant
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 32
+      value: 23.7
       objectReference: {fileID: 0}
     - target: {fileID: 4412365096935701931, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2037,11 +2037,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_text
-      value: Best Highscores
+      value: Tableaux des Records
       objectReference: {fileID: 0}
     - target: {fileID: 1724231223815709267, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_fontSize
-      value: 22.15
+      value: 16.35
       objectReference: {fileID: 0}
     - target: {fileID: 4412365096935701931, guid: 1162c88628bb562408ee584804d41170, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
