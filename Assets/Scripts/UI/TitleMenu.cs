@@ -34,7 +34,7 @@ public class TitleMenu : MenuBase
 
     private void StartGame()
     {
-        _blinkText.gameObject.SetActive(false);
+        _blinkText.enabled = false;
         _currentBlink = 0;
 
         InputManager.Instance.Autodestruct.performed -= TitleAction;
