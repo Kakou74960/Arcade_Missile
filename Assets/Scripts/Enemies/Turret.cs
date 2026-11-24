@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
@@ -8,6 +7,10 @@ public class Turret : MonoBehaviour
     [SerializeField] private LineRenderer _lineLock;
     [SerializeField] private SpriteRenderer[] _spriteToColor;
     [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private AudioSource _lockingAudio;
+    [SerializeField] private string _lockingSound = "EnergyCharge";
+    [SerializeField] private float _minLockPitch = 0;
+    [SerializeField] private float _maxLockPitch = 2;
     [SerializeField] private float _lockTime = 3;
     [SerializeField] private Color _startLockColor;
     [SerializeField] private Color _endLockColor;
@@ -17,7 +20,10 @@ public class Turret : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        SoundData sound = DatabaseManager.Instance.GetSFXByID(_lockingSound);
+        _lockingAudio.volume = sound.Volume;
+        _lockingAudio.clip = sound.AudioClip;
+        _lockingAudio.Play();
     }
 
     // Update is called once per frame
@@ -37,6 +43,8 @@ public class Turret : MonoBehaviour
             CharacterManager.Instance.CharacterController.Die();
             _currentLockTime = 0;
         }
+
+        _lockingAudio.pitch = Mathf.Lerp(_minLockPitch, _maxLockPitch, _currentLockTime/_lockTime);
     }
 
     private void CheckIfMissileVisible()

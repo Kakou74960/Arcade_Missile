@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -31,6 +30,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private SpriteRenderer _changeSpriteRenderer;
     [SerializeField] private Animator _invertedMissileAnim;
     [SerializeField] private string _phasorSound = "Phasing";
+    [SerializeField] private string _UnphasingSound = "Unphasing";
 
     [Header("Electrified State")]
     [SerializeField] private string _electricSound = "Electricity";
@@ -79,6 +79,7 @@ public class CharacterController : MonoBehaviour
                 {
                     _collider.isTrigger = false;
                     _missileAnimator.SetBool("Phased", false);
+                    AudioManager.Instance.PlaySFXOneShot(_UnphasingSound);
                 }
             }
         }

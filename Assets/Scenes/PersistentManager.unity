@@ -318,6 +318,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 67688c0d18dab034abccff04c6c07930, type: 2}
   - {fileID: 11400000, guid: 655a3c58b549ba647ad856b0eefc4195, type: 2}
   - {fileID: 11400000, guid: 0793067414a5b2242ac578d93d905712, type: 2}
+  - {fileID: 11400000, guid: 60f63d23befd77142a240b3e883e0eb3, type: 2}
+  - {fileID: 11400000, guid: 2f74137a6472f274ba88c7fb406129fb, type: 2}
   _musicsArray:
   - {fileID: 11400000, guid: 8eeee2f499fa7a34d9c2da331dad3d4a, type: 2}
   - {fileID: 11400000, guid: b14941986e2f31242a3f72f5e31a6203, type: 2}
