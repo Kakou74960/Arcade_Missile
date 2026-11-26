@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   _iD: MeatImpact1
   _audioClip: {fileID: 8300000, guid: 3a0425ac6acc0f048b3917fd019fdef1, type: 3}
-  _volume: 1
+  _volume: 0.6
