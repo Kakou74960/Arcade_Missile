@@ -38,6 +38,8 @@ public class Explosion : MonoBehaviour
             heart.transform.rotation = this.transform.rotation;
             heart.Die();
         }
+        /*else if (collision.GetComponent<Drone>())
+            collision.GetComponent<Drone>().Dead((collision.transform.position - transform.position).normalized);*/
         else
             Destroy(collision.gameObject);
     }

@@ -56,6 +56,7 @@ public class CharacterController : MonoBehaviour
     private bool _forcedBrake;
     private bool _inverted;
     private bool _die = false;
+    private Transform _trashCanParent;
 
     private List<Collider2D> _walls = new List<Collider2D>();
     #endregion Fields
@@ -162,6 +163,8 @@ public class CharacterController : MonoBehaviour
             }
         }
     }
+
+    public Transform TrashCanParent { get => _trashCanParent; set => _trashCanParent = value; }
     #endregion Properties
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -192,11 +195,11 @@ public class CharacterController : MonoBehaviour
                 _rotation = Vector2.SignedAngle(Vector2.up, -InputManager.Instance.MoveDir);
             else
                 _rotation = Vector2.SignedAngle(Vector2.up, InputManager.Instance.MoveDir);
+            _rb.rotation = _rotation;
             Debug.Log(_rotation);
         }
 
         //rotation du missile
-        _rb.rotation = _rotation;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -318,10 +321,10 @@ public class CharacterController : MonoBehaviour
     {
         StopSpeedParticles();
         _smokeParticle.Stop();
-        _highSpeedParticle.transform.parent = null;
-        _mediumSpeedParticle.transform.parent = null;
-        _lowSpeedParticle.transform.parent = null;
-        _smokeParticle.transform.parent = null;
+        _highSpeedParticle.transform.parent = _trashCanParent;
+        _mediumSpeedParticle.transform.parent = _trashCanParent;
+        _lowSpeedParticle.transform.parent = _trashCanParent;
+        _smokeParticle.transform.parent = _trashCanParent;
     }
 
     private void PlayRocketSound(string id)

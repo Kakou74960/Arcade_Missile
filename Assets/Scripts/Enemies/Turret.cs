@@ -9,6 +9,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private AudioSource _lockingAudio;
     [SerializeField] private string _lockingSound = "EnergyCharge";
+    [SerializeField] private string _shootingSound = "TurretShot";
     [SerializeField] private float _minLockPitch = 0;
     [SerializeField] private float _maxLockPitch = 2;
     [SerializeField] private float _lockTime = 3;
@@ -36,10 +37,10 @@ public class Turret : MonoBehaviour
             _currentLockTime = 0;
             _lineLock.enabled = false;
         }
-        //_elementToTurnToTarget.transform.rotation = Quaternion.FromToRotation(gameObject.transform.position, CharacterManager.Instance.CharacterController.transform.position);
 
         if(_currentLockTime >= _lockTime)
         {
+            AudioManager.Instance.PlaySFXOneShot(_shootingSound);
             CharacterManager.Instance.CharacterController.Die();
             _currentLockTime = 0;
         }

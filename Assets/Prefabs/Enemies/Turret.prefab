@@ -244,6 +244,7 @@ MonoBehaviour:
     m_Bits: 192
   _lockingAudio: {fileID: 1269248202327225742}
   _lockingSound: EnergyCharge
+  _shootingSound: TurretShot
   _minLockPitch: 0
   _maxLockPitch: 5
   _lockTime: 3
@@ -290,7 +291,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 118
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

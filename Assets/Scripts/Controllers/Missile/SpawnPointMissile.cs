@@ -7,6 +7,7 @@ public class SpawnPointMissile : MonoBehaviour
     [SerializeField] private Animator _launcherAnimator;
     [SerializeField] private string _spawnSound = "Launching_Missile";
     [SerializeField] private float _delaySpawn = 0.5f;
+    [SerializeField] private Transform _trashCanTransform;
 
     private GameObject _currentMissile;
     private float _spawnTime = 0;
@@ -26,7 +27,8 @@ public class SpawnPointMissile : MonoBehaviour
             if (_spawnTime >= _delaySpawn)
             {
                 AudioManager.Instance.PlaySFXOneShot(_spawnSound);
-                _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position + _spawnOffset, Quaternion.identity);
+                _currentMissile = Instantiate(_missileToSpawn, gameObject.transform.position + _spawnOffset, transform.rotation);
+                _currentMissile.GetComponent<CharacterController>().TrashCanParent = _trashCanTransform;
                 LevelManager.Instance.MissileUsed++;
                 _launcherAnimator.SetTrigger("Close");
                 _spawnTime = 0;
