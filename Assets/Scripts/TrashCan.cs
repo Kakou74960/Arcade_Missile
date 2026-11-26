@@ -17,12 +17,12 @@ public class TrashCan : MonoBehaviour
     {
         if (_currentDelay >= _delay)
         {
-            MonoBehaviour[] eraseArray = gameObject.GetComponentsInChildren<MonoBehaviour>(true);
+            Transform[] eraseArray = gameObject.GetComponentsInChildren<Transform>(true);
 
-            foreach (MonoBehaviour obj in eraseArray)
+            foreach (Transform obj in eraseArray)
             {
                 if (obj.gameObject != this.gameObject)
-                    Destroy(obj,_delay);
+                    Destroy(obj.gameObject,_delay);
             }
             _currentDelay = 0;
         }
